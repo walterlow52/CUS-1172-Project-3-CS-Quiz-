@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
-    let users_name = document.querySelector('#name').value;
-    alert(users_name);
+    let first_name = document.querySelector('#fname').value;
+    let last_name = document.querySelector('#lname').value;
+    console.log(first_name + last_name);
 };
 });
 
