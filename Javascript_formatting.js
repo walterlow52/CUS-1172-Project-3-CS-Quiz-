@@ -4,4 +4,4 @@ document.addEventListener('DOMContentLoaded', function() {
     alert(users_name);
   }
 });
-});
+
