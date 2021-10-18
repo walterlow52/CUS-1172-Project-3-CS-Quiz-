@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     
+    alert(first_name + last_name);
+    
     function get_API_data () {
       fetch('https://randomuser.me/api/').then(
         (response) => {
