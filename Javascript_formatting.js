@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
         )
     }
     
+    function updateDOM(data) {
+      let image = data.results[0].picutre.large;
+      let email = data.results[0].email;
+      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
+      document.querySelector("#data").innerHTML = HTMLstring;
+    
     var template = Handlebars.template(templateSpec);
 };
 });
