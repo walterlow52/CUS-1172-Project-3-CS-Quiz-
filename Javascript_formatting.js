@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
   }*/
     
-    function get_API_data () {
+   /* function get_API_data () {
       fetch('https://randomuser.me/api/').then(
         (response) => {
          return response.json();   
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let email = data.results[0].email;
       let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
       document.querySelector("#data").innerHTML = HTMLstring;
-    }
+    }*/
     
     //var template = Handlebars.template(templateSpec);
 };
