@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
+  
+    var question1_Str = JSON.stringify(question_1);
+    console.log(question1_Str);
     
   /*document.addEventListener('click', function(event) {
   element = event.target;
