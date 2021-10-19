@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     var template = Handlebars.template(templateSpec);
-});
+};
 });
 
