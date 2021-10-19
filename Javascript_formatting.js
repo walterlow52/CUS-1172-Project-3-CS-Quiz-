@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#data").innerHTML = HTMLstring;
     
     var template = Handlebars.template(templateSpec);
-};
+});
 });
 
