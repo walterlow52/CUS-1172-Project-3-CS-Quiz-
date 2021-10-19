@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let email = data.results[0].email;
       let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
       document.querySelector("#data").innerHTML = HTMLstring;
+    }
     
     var template = Handlebars.template(templateSpec);
 });
