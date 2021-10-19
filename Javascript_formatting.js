@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     
+  /*document.addEventListener('click', function(event) {
+  element = event.target;
+  if (element.idName === 'remove') {
+    
+  }*/
+    
     function get_API_data () {
       fetch('https://randomuser.me/api/').then(
         (response) => {
