@@ -1,4 +1,4 @@
-"profile": {
+/*"profile": {
     "name": "typicode"
   }
 
@@ -8,5 +8,17 @@ const question_1 = {
   "1B": "CSS", 
   "1C": "Javascript,
   "1D": "All of the above"
+  }
+}*/
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
 }
