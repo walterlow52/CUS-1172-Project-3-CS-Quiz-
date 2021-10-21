@@ -2,41 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
-  
-   /* var question1_Str = JSON.stringify(question_1);
-    console.log(question1_Str);*/
     
-  /*document.addEventListener('click', function(event) {
-  element = event.target;
-  if (element.idName === 'remove') {
+    var quiz_model = [
+      {
+        name: "Quiz 1",
+        message: "Welcome to Quiz 1! You may begin!"
+      },
+      {
+        name: "Quiz 2",
+        message: "Welcome to Quiz 2! You may begin!"
+      }
+    ];
     
-  }*/
-    
-   /* function get_API_data () {
-      fetch('https://randomuser.me/api/').then(
-        (response) => {
-         return response.json();   
-        }
-        ).then(
-        (data) => {
-         updateDOM(data); 
-        }
-        
-        ).catch(
-          (err) => {
-           console.error(err); 
-          }
-        )
+    var user_view = (quiz_id, quiz_model_Index) => {
+      console.log("Take Quiz view");
+      var srce = document.querySelector(quiz_id).innerHTML;
+      var quiz_template = Handlebars.compile(srce);
+      var html = quiz_template(quiz_model[quiz_model_Index]);
+      document.querySelector("#view_quiz").innerHTML = html;
     }
-    
-    function updateDOM(data) {
-      let image = data.results[0].picutre.large;
-      let email = data.results[0].email;
-      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
-      document.querySelector("#data").innerHTML = HTMLstring;
-    }*/
-    
-    //var template = Handlebars.template(templateSpec);
+      
 };
 });
 
