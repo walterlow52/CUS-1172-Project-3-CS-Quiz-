@@ -26,7 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#view_quiz").innerHTML = html;
     }
     
-    function fetch_data () {
+    async function fetch_data () {
+      try {
+        const response = await fetch('https://randomuser.me/api/')
+        const result = await response.json()
+        console.log(result);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+fetch_data()
+    
+    /*function fetch_data () {
       const fetch = require("node-fetch");
       fetch('https://randomuser.me/api/').then(
         (response) => {
@@ -52,5 +64,5 @@ function updateDOM(data) {
   let email = data.results[0].email;
   let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
   document.querySelector("#showdata").innerHTML = HTMLstring;
-}
+}*/
 
