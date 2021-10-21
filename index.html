@@ -21,8 +21,8 @@
       
       <div> 
         <ul>
-          <li onclick = "user_view('#quiz_view1', 0)"> Click to take QUIZ 1 </li>
-          <li onclick = "user_view('#quiz_view2', 1)"> Click to take QUIZ 2 </li>
+          <li onclick = "#user_view('#quiz_view1', 0)"> Click to take QUIZ 1 </li>
+          <li onclick = "#user_view('#quiz_view2', 1)"> Click to take QUIZ 2 </li>
         </ul>
       </div>
       
@@ -35,12 +35,14 @@
       <div class = "quiz_outline">
       <h2 class = "quiz-title" style = "color: red;"> {{name}} </h2>
       <p class = "quiz_description"> {{message}} </p>
-      </div> </script>
+      </div> 
+    </script>
       
       <script id = "quiz_view2" type = "text/x-handlebars-template">
       <div class = "quiz_outline">
       <h2 class = "quiz-title" style = "color: blue;"> {{name}} </h2>
       <p class = "quiz_description"> {{message}} </p>
-      </div> </script>
+      </div> 
+    </script>
                
 </html>
