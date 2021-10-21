@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
-    
-    var quiz_model = [
+      
+};
+});
+
+ var quiz_model = [
       {
         name: "Quiz 1",
         message: "Welcome to Quiz 1! You may begin!"
@@ -22,7 +25,3 @@ document.addEventListener('DOMContentLoaded', function() {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
     }
-      
-};
-});
-
