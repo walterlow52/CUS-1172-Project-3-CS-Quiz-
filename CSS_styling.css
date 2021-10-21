@@ -15,6 +15,7 @@ li {
 }
 
 .button1 {
+  display: block;
   background-color: white;
   color: red;
   text-align: center;
@@ -23,6 +24,7 @@ li {
 }
 
 .button2 {
+  display: block;
   background-color: white;
   color: blue;
   text-align: center;
