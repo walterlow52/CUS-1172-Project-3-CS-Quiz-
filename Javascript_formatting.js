@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function fetch_data () {
+      const fetch = require("node-fetch");
       fetch('https://randomuser.me/api/').then(
         (response) => {
           return response.json();
