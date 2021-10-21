@@ -22,3 +22,18 @@ li span {
   text-decoration: none;
 }
 
+.button1 {
+  background-color: white;
+  color: red;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white;
+  color: blue;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  cursor: pointer;
+}
