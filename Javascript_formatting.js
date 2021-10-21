@@ -47,7 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function handle_widgets(e) {
  console.log("Button Clicked"); 
 }
-    
+
+function update(current_view) {
+ const html_element = render({}, current_view)
+ document.querySelector("#widgets").innerHTML = html_element;
+}
+
+const render = (model, view) => {
+ template_source = document.querySelector(view).innerHTML
+  var template = Handlebars.compile(template_source);
+}
+
     /*function fetch_data () {
       const fetch = require("node-fetch");
       fetch('https://randomuser.me/api/').then(
