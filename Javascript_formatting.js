@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 fetch_data()
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#widgets").onclick = (e) => {
+    handle_widgets(e);
+  };
+});
+
+function handle_widgets(e) {
+ console.log("Button Clicked"); 
+}
     
     /*function fetch_data () {
       const fetch = require("node-fetch");
