@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
+      return false;
     }
       
 };
