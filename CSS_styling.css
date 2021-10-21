@@ -14,14 +14,6 @@ li {
   float: center;
 }
 
-li span {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 .button1 {
   background-color: white;
   color: red;
