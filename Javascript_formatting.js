@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#view_quiz").innerHTML = html;
     }
     
-    const fetch = require("node-fetch");
+    function fetch_data () {
     fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   console.error(err);
 }
 )
+    }
 
     function updateDOM(data) {
      let image = data.results[0].picture.large;
