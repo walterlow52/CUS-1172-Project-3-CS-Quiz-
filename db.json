@@ -1,8 +1,10 @@
 {
-  "posts": [
+  "quizQuestion1": [
     {
-      "id": 1,
-      "title": "hello"
+      "1A": 1,
+      "1B": "hello"
+      "1C": "CSS"
+      "1D": "Bootstrap
     }
   ],
   "profile": {
