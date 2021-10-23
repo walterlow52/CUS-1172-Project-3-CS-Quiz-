@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#view_quiz").innerHTML = html;
     }
     
-    function fetch_data () {
+    function fetch_data() {
     fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
