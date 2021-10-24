@@ -1,6 +1,4 @@
-var string_one = JSON.stringify(quizQuestion1);
-console.log(quizQuestion1);
-console.log(string_one);
+console.log(quizQuestion1.1A);
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
