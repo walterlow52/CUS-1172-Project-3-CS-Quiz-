@@ -25,24 +25,3 @@ document.addEventListener('DOMContentLoaded', function() {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
     }
-    
-    function fetch_data() {
-    fetch('https://randomuser.me/api/').then(
-    (response) => {
-      return response.json()
-    }
-  ).then((data) => {
-      console.log(data);
-  }
-).catch( (err) => {
-  console.error(err);
-}
-)
-    }
-
-    function updateDOM(data) {
-     let image = data.results[0].picture.large;
-     let email = data.results[0].email;
-     let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
-     document.querySelector("#showdata").innerHTML = HTMLstring;
-    }
