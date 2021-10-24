@@ -1,4 +1,3 @@
-console.log(quizQuestion1.1A);
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
