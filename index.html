@@ -10,6 +10,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="Javascript_formatting.js"></script>
+    
+    <script>
+    function fetch_data() {
+    fetch('https://randomuser.me/api/').then(
+    (response) => {
+      return response.json()
+    }
+  ).then((data) => {
+      console.log(data);
+  }
+).catch( (err) => {
+  console.error(err);
+}
+)
+    }
+    </script>
+<script>
+    function updateDOM(data) {
+     let image = data.results[0].picture.large;
+     let email = data.results[0].email;
+     let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
+     document.querySelector("#showdata").innerHTML = HTMLstring;
+    }
+    </script>
   </head>
   
   <body>
@@ -52,30 +76,6 @@
       <h2 class = "quiz-title" style = "color: blue;"> {{name}} </h2>
       <p class = "quiz_description"> {{message}} </p>
       </div> 
-    </script>
-    
-    <script>
-    function fetch_data() {
-    fetch('https://randomuser.me/api/').then(
-    (response) => {
-      return response.json()
-    }
-  ).then((data) => {
-      console.log(data);
-  }
-).catch( (err) => {
-  console.error(err);
-}
-)
-    }
-    </script>
-<script>
-    function updateDOM(data) {
-     let image = data.results[0].picture.large;
-     let email = data.results[0].email;
-     let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
-     document.querySelector("#showdata").innerHTML = HTMLstring;
-    }
     </script>
                
 </html>
