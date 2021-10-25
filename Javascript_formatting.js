@@ -7,6 +7,24 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector("#fetch").onsubmit = () => {
+ async function async_fetch() {
+        const response = await fetch('https://randomuser.me/api/');
+        const data = await response.json();
+        updateDOM(data);
+      }
+      
+    function updateDOM(data) {
+     let image = data.results[0].picture.large;
+     let email = data.results[0].email;
+     let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
+     document.querySelector("#showdata").innerHTML = HTMLstring;
+      return false;
+    }
+  }
+});
+
  var quiz_model = [
       {
         name: "Quiz 1",
