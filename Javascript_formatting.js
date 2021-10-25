@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelector("#fetch").onsubmit = () => {
     fetch('https://randomuser.me/api/').then(
     (response) => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return false;
     }
   }
-});*/
+});
 
  var quiz_model = [
       {
