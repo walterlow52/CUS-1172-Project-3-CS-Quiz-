@@ -1,1 +1,13 @@
-
+{
+  "quizQuestion1": [
+    {
+      "1A": 1,
+      "1B": "hello"
+      "1C": "CSS"
+      "1D": "Bootstrap"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
