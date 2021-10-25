@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     (response) => {
       return response.json()
     }
-  ).then((results) => {
-      console.log(results)
+  ).then((data) => {
+      updateDOM(data);
   }
 ).catch( (err) => {
   console.error(err);
