@@ -22,7 +22,7 @@
   },
   "-quizQuestion4-": {
     "question4": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
-    "4A": "<script src = "Javascript.js">",
+    "4A": " ",
     "answer4": "Hightext Machine Learning",
     "4C": "Hypertext Makeup Language",
     "4D": "Hypertext Markup Language"
