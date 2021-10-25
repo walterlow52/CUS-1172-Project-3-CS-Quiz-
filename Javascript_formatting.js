@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
-      return false;
     }
   }
 });
