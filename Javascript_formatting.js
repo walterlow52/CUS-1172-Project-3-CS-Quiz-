@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.addEventListener('DOMContentLoaded', () => {
       quiz_application.view = "#quizView";
-      quiz_application.model {
+      quiz_application.model 
        action: "start" 
       }
       update(quiz_application);
