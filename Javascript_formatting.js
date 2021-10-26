@@ -127,7 +127,7 @@ function question_view(quiz_application) {
   else if (quiz_application.model.type == "text") {
     quiz_application.view = "#text_view";
   }
-  else if (quiz_application.model.type == "MC" {
+  else if (quiz_application.model.type == "MC" 
      quiz.application.view = "#MC_view";      
    }
 }
