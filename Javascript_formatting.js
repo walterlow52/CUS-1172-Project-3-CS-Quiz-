@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#view_quiz").innerHTML = html;
     }
     
-    const quiz_application = {
+    /*const quiz_application = {
       view: "#quizView",
       question: -1,
       model: {}
@@ -143,4 +143,4 @@ function question_view(quiz_application) {
 function update(quiz_application) {
   const html_element = user_view(quiz_application.model, quiz_application.view)
   document.querySelector("#quiz_view").innerHTML = html_element;
-}
+}*/
