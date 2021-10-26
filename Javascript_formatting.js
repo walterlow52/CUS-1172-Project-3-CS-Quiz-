@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       quiz_application.user_view = "#quizView";
       quiz_application.model 
        action: "start" 
-      }
+      });
       update(quiz_application);
       
       document.querySelector("#quiz_view").onclick = (e) => {
