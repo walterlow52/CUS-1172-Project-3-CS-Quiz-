@@ -116,7 +116,7 @@ function update_question () {
   }
 }
 
-function setQuestionView(quiz_application) {
+function question_view(quiz_application) {
   if (quiz_application.question == -2) {
     quiz_application.view  = "#completion";
     return
