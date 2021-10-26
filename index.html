@@ -67,5 +67,19 @@
     </div>
     </div>
     </script>
+  
+  <script id="true/false_view" type="text/x-handlebars-template">
+    <div class="container">
+    <div class="row">
+    <div class="col">
+    <div>
+      <span style="text-align:center"> {{this.question}}</span>
+      <button class="btn btn-primary pull-left" data-action="answerChoice" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+      <button class="btn btn-danger float-right" data-action="answerChoice" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </script>
                
 </html>
