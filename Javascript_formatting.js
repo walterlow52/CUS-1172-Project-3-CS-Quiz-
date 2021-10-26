@@ -48,3 +48,92 @@ document.addEventListener('DOMContentLoaded', () => {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
     }
+    
+    const quiz_application = {
+      user_view: "#quizView",
+      question: -1,
+      model: {}
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      quiz_application.user_view = "#quizView";
+      quiz_application.model {
+       action: "start" 
+      }
+      update(quiz_application);
+      
+      document.querySelector("#quiz_view").onclick = (e) => {
+        handle_quiz(e)
+      }
+    });
+
+function handle_quiz(e) {
+  if (quiz_application.user_view == "#quizView") {
+    if (e.target.dataset.action == "start") {
+     quiz_application.question = 0
+      quiz_application.model = questions[quiz_application.question];
+      question_view(quiz_application);
+      update(quiz_appplication);
+    }
+  }
+  
+  if (quiz_application.user_view == "#true/false_view") {
+    if (e.target.dataset.action == "answer") {
+      correct = check_answer(e.target.dataset.answer, quiz_application.model);
+      quiz_application.question = quiz_application.question + 1;
+      quiz_application.model = questions[quiz_application.question];
+      question_view(quiz_application);
+      update(quiz_application);
+    }
+  }
+  
+  if (quiz_application.user_view == "#completion") {
+    if (e.target.dataset.action == "start_again") {
+      quiz_application.user_view = "#quizView";
+      quiz_application.model = {
+        action = "start"
+      }
+      update(quiz_application);
+    }
+  }
+  
+}
+
+function check_answer (answer, model) {
+  if (answer == model.correctAnswer) {
+    return true;
+  }
+  return false;
+}
+
+function update_question () {
+  if (quiz_application.question < questions.length-1) {
+    quiz_applcation.question = quiz_application.question + 1;
+    quiz_applicatoin.model = questions[quiz_application.question];
+  }
+  else {
+    quiz_application.question = -2;
+    quiz_application.model = {};
+  }
+}
+
+function question_view(quiz_application) {
+  if (quiz_application.question == -2) {
+    quiz_application.user_view = "#completion";
+    return
+  }
+  
+  if (quiz_application.model.type == "true_false")
+    quiz_application.user_view = "#true/false_view";
+  else if (quiz_application.model.type == "text") {
+    quiz_application.user_view = "#text_view";
+  }
+  else if (quiz_application.model.type == "MC" {
+     quiz.application.user_view = "#MC_view";      
+   }
+}
+
+function update(quiz_application) {
+  const html_element = user_view(quiz_application.model, quiz_applicaiton.user_view)
+  document.querySelector("#quiz_view").innerHTML = html_element;
+}
