@@ -68,18 +68,45 @@
     </div>
     </script>
   
-  <script id="true/false_view" type="text/x-handlebars-template">
-    <div class="container">
-    <div class="row">
-    <div class="col">
+  <script id = "true/false_view" type = "text/x-handlebars-template">
+    <div class = "container">
+    <div class = "row">
+    <div class = "col">
     <div>
       <span style="text-align:center"> {{this.question}}</span>
-      <button class="btn btn-primary pull-left" data-action="answerChoice" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
-      <button class="btn btn-danger float-right" data-action="answerChoice" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+      <button class = "btn btn-primary pull-left" data-action = "answerChoice" data-answer = "{{this.options.[0]}}"> {{this.options.[0]}} </button>
+      <button class = "btn btn-danger float-right" data-action = "answerChoice" data-answer = "{{this.options.[1]}}"> {{this.options.[1]}} </button>
     </div>
     </div>
     </div>
     </div>
   </script>
+  
+  <script id = "text_view" type = "text/x-handlebars-template">
+    <div class = "container">
+    <div class = "row">
+    <div class = "col">
+    <div>
+      <span style = "text-align:center"> {{this.question}} </span>
+      <input type = "text" id = "{{this.answerFieldId}}" name = "answer"> <br> <br>
+      <button class = "btn btn-danger float-right" data-action = "submit"> Submit </button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </script>
+  
+  <script id = "completion" type = "text/x-handlebars-template">
+    <div class = "container">
+    <div class = "row">
+    <div class = "col">
+    <div>
+      <span> Thank you for taking the quiz </span>
+      <button class = "btn btn-danger float-right" data-action = "start_again"> Start Again </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </script>
                
 </html>
