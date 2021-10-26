@@ -86,6 +86,17 @@ function handle_quiz(e) {
     }
   }
   
+  if (quiz_application.view == "#text_view") {
+       if (e.target.dataset.action == "submit") {
+     
+           response = document.querySelector(`#${quiz_application.model.answerId}`).value;
+           correct = check_answer(e.target.dataset.answerChoice, quiz_application.model);
+           update_question(quiz_application);
+           question_view(quiz_application);
+           update(quiz_application);
+       }
+    }
+  
   if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
       quiz_application.view = "#quizView";
