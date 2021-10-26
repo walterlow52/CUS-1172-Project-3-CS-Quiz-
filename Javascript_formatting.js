@@ -90,7 +90,7 @@ function handle_quiz(e) {
     if (e.target.dataset.action == "start_again") {
       quiz_application.view = "#quizView";
       quiz_application.model = {
-        action = "start"
+        action : "start"
       }
       update(quiz_application);
     }
