@@ -47,10 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
-      template_src = document.querySelector(View_).innerHTML
-      var template = Handlebars.compile(template_src);
-      var html_template = template({...Model_, ...quiz_application})
-      return html_template
     }
     
     const quiz_application = {
@@ -149,9 +145,9 @@ function update(quiz_application) {
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
-/*const template_view = (Model_, View_) => {
+const template_view = (Model_, View_) => {
   template_src = document.querySelector(View_).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...Model_, ...quiz_application})
   return html_template
-}*/
+}
