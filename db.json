@@ -3,7 +3,7 @@
       "question1": "Which programming language is used for web development?", 
       "1A": "SQL",
       "1B": "Bootstrap",
-      "answer1": "HTML",
+      "answer": "HTML",
       "1D": "All of the above"
     },
   "quizQuestion2": {
@@ -11,39 +11,65 @@
     "2A": "Highlight Machine Language",
     "2B": "Hightext Machine Language",
     "2C": "Hypertext Makeup Language",
-    "answer2": "Hypertext Markup Language"
+    "answer": "Hypertext Markup Language"
   },
   "quizQuestion3": {
     "question3": "What is the purpose of CSS?",
     "3A": "To brag to someone that you know CSS",
     "3B": "To store values throughout the HTML webpage",
-    "answer3": "To style an HTML webpage",
+    "answer": "To style an HTML webpage",
     "3D": "All of the above"
   },
   "-quizQuestion4-": {
     "question4": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
     "4A": " ",
-    "answer4": "Hightext Machine Learning",
+    "answer": "Hightext Machine Learning",
     "4C": "Hypertext Makeup Language",
     "4D": "Hypertext Markup Language"
   },
   "quizQuestion5": {
     "type": "true_false",
     "question5": "Bootstrap is an effective way of styling an HTML webpage.",
-    "correctAnswer": "true",
+    "answer": "true",
     "options": ["true", "false"],
   },
   "quizQuestion6": {
-    "question2": "The SQL programming language focuses on: ",
-    "correct6": "databases",
+    "question6": "The SQL programming language focuses on: ",
+    "answer": "databases",
     "6B": "styling",
     "6C": "development",
     "6D": "none of the above"
   },
   "quizQuestion7": {
     "type": "true_false"
-    "question7": "What does HTML stand for?",
-    "correctAnswer": "true",
+    "question7": "Tableau allows the user to create a 3D representation of a certain dataset.",
+    "answer": "true",
+    "options": ["true", "false"],
+  },
+"quizQuestion8": {
+    "question2": "What are the data types that displays number values in Java?",
+    "8A": "int",
+    "8B": "double",
+    "8C": "string",
+    "8D": "boolean"
+    "8E": "both A & C",
+    "answer": "both A & B",
+    "8G": "both C & D",
+    "8H": "both B & D",
+    "8I": "none of the above",
+    "8J": "all of the above (A-D)",
+  },
+"quizQuestion9": {
+    "question2": "Which of the following is a type of loop in Java?",
+    "9A": "For",
+    "9B": "While",
+    "9C": "Do-while",
+    "answer": "all of the above"
+  },
+"quizQuestion10": {
+    "type": "true_false"
+    "question10": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
+    "answer": "true",
     "options": ["true", "false"],
   }
   ]
