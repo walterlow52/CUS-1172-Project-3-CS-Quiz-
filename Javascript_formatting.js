@@ -55,16 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
       model: {}
     }
     
-    document.addEventListener('DOMContentLoaded', () => {
-      quiz_application.view = "#quizView";
-      quiz_application.model 
-       action: "start" 
-      });
-      update(quiz_application);
-      
-      document.querySelector("#quiz_view").onclick = (e) => {
-        handle_quiz(e)
-      }
+document.addEventListener('DOMContentLoaded', () => {
+  quiz_application.view = "#quizView";
+  quiz_application.model = {
+    action : "start"
+  }
+  update(quiz_application);
+  document.querySelector("#quiz_view").onclick = (e) => {
+      handle_quiz(e)
+  }
+});
 
 function handle_quiz(e) {
   if (quiz_application.view == "#quizView") {
