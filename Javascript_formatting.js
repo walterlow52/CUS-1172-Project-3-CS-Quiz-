@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var user_view = (quiz_id, quiz_model_Index) => {
       console.log("Take Quiz view");
-      var srce = document.querySelector(quiz_id).innerHTML;
+      //var srce = document.querySelector(quiz_id).innerHTML;
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
