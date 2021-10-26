@@ -1,3 +1,4 @@
+questions: [
 "quizQuestion1": {
       "question1": "Which programming language is used for web development?", 
       "1A": "SQL",
@@ -45,7 +46,7 @@
     "correctAnswer": "true",
     "options": ["true", "false"],
   }
-  
+  ]
   
   
   "profile": {
