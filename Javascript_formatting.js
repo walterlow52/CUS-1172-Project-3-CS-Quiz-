@@ -116,20 +116,17 @@ function update_question () {
   }
 }
 
-function question_view(quiz_application) {
+function setQuestionView(quiz_application) {
   if (quiz_application.question == -2) {
-    quiz_application.view = "#completion";
+    quiz_application.view  = "#completion";
     return
   }
-  
+
   if (quiz_application.model.type == "true_false")
     quiz_application.view = "#true/false_view";
-  else if (quiz_application.model.type == "text") {
+  else if (quiz_application.model.type == "text_input") {
     quiz_application.view = "#text_view";
   }
-  else if (quiz_application.model.type == "MC" { 
-     quiz_application.view = "#MC_view";      
-   }
 }
 
 function update(quiz_application) {
