@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector("#quiz_view").onclick = (e) => {
         handle_quiz(e)
       }
-    );
 
 function handle_quiz(e) {
   if (quiz_application.view == "#quizView") {
