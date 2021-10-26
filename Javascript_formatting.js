@@ -141,6 +141,13 @@ function question_view(quiz_application) {
 }
 
 function update(quiz_application) {
-  const html_element = user_view(quiz_application.model, quiz_application.view)
+  const html_element = template_view(quiz_application.model, quiz_application.view)
   document.querySelector("#quiz_view").innerHTML = html_element;
+}
+
+const template_view = (Model_, View_) => {
+  template_src = document.querySelector(View_).innerHTML
+  var template = Handlebars.compile(template_src);
+  var html_template = template({...Model_, ...quiz_application})
+  return html_template
 }
