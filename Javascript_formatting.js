@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     ];
     
-    var user_view = (quiz_id, quiz_model_Index, Model_, View_) => {
+    /*var user_view = (quiz_id, quiz_model_Index, Model_, View_) => {
       console.log("Take Quiz view");
       var srce = document.querySelector(quiz_id).innerHTML;
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
-    }
+    }*/
     
     const quiz_application = {
       view: "#quizView",
@@ -145,7 +145,13 @@ function update(quiz_application) {
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
-const template_view = (Model_, View_) => {
+//const template_view = (Model_, View_) => {
+  var user_view = (quiz_id, quiz_model_Index, Model_, View_) => {
+      console.log("Take Quiz view");
+      var srce = document.querySelector(quiz_id).innerHTML;
+      var quiz_template = Handlebars.compile(srce);
+      var html = quiz_template(quiz_model[quiz_model_Index]);
+      document.querySelector("#view_quiz").innerHTML = html;
   template_src = document.querySelector(View_).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...Model_, ...quiz_application})
