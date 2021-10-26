@@ -38,19 +38,6 @@
     
     <div id = "quiz_view">
     </div>
-    
-    <script id = "quizView" type = "text/x-handlebars-template">
-    <div class = "container">
-    <div class = "row">
-    <div class = "col">
-    <div>
-    <span> Press the button below to begin quiz </span>
-    <button class = "btn btn-danger float-right" data-action = "{{this.action}}"> {{this.action}} </button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </script>
 
   </body>
       
@@ -66,6 +53,19 @@
       <h2 class = "quiz-title" style = "color: blue;"> {{name}} </h2>
       <p class = "quiz_description"> {{message}} </p>
       </div> 
+    </script>
+  
+  <script id = "quizView" type = "text/x-handlebars-template">
+    <div class = "container">
+    <div class = "row">
+    <div class = "col">
+    <div>
+    <span> Press the button below to begin quiz </span>
+    <button class = "btn btn-danger float-right" data-action = "{{this.action}}"> {{this.action}} </button>
+    </div>
+    </div>
+    </div>
+    </div>
     </script>
                
 </html>
