@@ -77,7 +77,7 @@ function handle_quiz(e) {
   }
   
   if (quiz_application.view == "#true/false_view") {
-    if (e.target.dataset.action == "answer") {
+    if (e.target.dataset.action == "answerChoice") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question = quiz_application.question + 1;
       quiz_application.model = questions[quiz_application.question];
@@ -98,8 +98,8 @@ function handle_quiz(e) {
   
 }
 
-function check_answer (answer, model) {
-  if (answer == model.correctAnswer) {
+function check_answer (user_answer, user_model) {
+  if (user_answer == user_model.answer) {
     return true;
   }
   return false;
@@ -124,7 +124,7 @@ function question_view(quiz_application) {
 
   if (quiz_application.model.type == "true_false")
     quiz_application.view = "#true/false_view";
-  else if (quiz_application.model.type == "text_input") {
+  else if (quiz_application.model.type == "text") {
     quiz_application.view = "#text_view";
   }
 }
