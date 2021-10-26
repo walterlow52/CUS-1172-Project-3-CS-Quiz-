@@ -50,24 +50,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const quiz_application = {
-      user_view: "#quizView",
+      view: "#quizView",
       question: -1,
       model: {}
     }
     
     document.addEventListener('DOMContentLoaded', () => {
-      quiz_application.user_view = "#quizView";
-      quiz_application.model 
+      quiz_application.view = "#quizView";
+      quiz_application.model {
        action: "start" 
-      });
+      }
       update(quiz_application);
       
       document.querySelector("#quiz_view").onclick = (e) => {
         handle_quiz(e)
       }
+    });
 
 function handle_quiz(e) {
-  if (quiz_application.user_view == "#quizView") {
+  if (quiz_application.view == "#quizView") {
     if (e.target.dataset.action == "start") {
      quiz_application.question = 0
       quiz_application.model = questions[quiz_application.question];
@@ -76,7 +77,7 @@ function handle_quiz(e) {
     }
   }
   
-  if (quiz_application.user_view == "#true/false_view") {
+  if (quiz_application.view == "#true/false_view") {
     if (e.target.dataset.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question = quiz_application.question + 1;
@@ -86,9 +87,9 @@ function handle_quiz(e) {
     }
   }
   
-  if (quiz_application.user_view == "#completion") {
+  if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
-      quiz_application.user_view = "#quizView";
+      quiz_application.view = "#quizView";
       quiz_application.model = {
         action = "start"
       }
@@ -118,21 +119,21 @@ function update_question () {
 
 function question_view(quiz_application) {
   if (quiz_application.question == -2) {
-    quiz_application.user_view = "#completion";
+    quiz_application.view = "#completion";
     return
   }
   
   if (quiz_application.model.type == "true_false")
-    quiz_application.user_view = "#true/false_view";
+    quiz_application.view = "#true/false_view";
   else if (quiz_application.model.type == "text") {
-    quiz_application.user_view = "#text_view";
+    quiz_application.view = "#text_view";
   }
   else if (quiz_application.model.type == "MC" {
-     quiz.application.user_view = "#MC_view";      
+     quiz.application.view = "#MC_view";      
    }
 }
 
 function update(quiz_application) {
-  const html_element = user_view(quiz_application.model, quiz_applicaiton.user_view)
+  const html_element = user_view(quiz_application.model, quiz_applicaiton.view)
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
