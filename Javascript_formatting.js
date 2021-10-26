@@ -130,6 +130,6 @@ function setQuestionView(quiz_application) {
 }
 
 function update(quiz_application) {
-  const html_element = user_view(quiz_application.model, quiz_applicaiton.view)
+  const html_element = user_view(quiz_application.model, quiz_application.view)
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
