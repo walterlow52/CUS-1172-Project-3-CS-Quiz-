@@ -1,4 +1,5 @@
-  "quizQuestion1": {
+const questions = [  
+"quizQuestion1": {
       "question1": "Which programming language is used for web development?", 
       "1A": "SQL",
       "1B": "Bootstrap",
@@ -45,7 +46,7 @@
     "correctAnswer": "true",
     "options": ["true", "false"],
   }
-  
+  ]
   
   
   "profile": {
