@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   document.querySelector("#fetch").onsubmit = () => {
     fetch('https://www.ixl.com/math/grade-4/identify-place-value-names').then(
     (response) => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 )
       
-    /*function updateDOM(data) {
+    function updateDOM(data) {
      let image = data.results[0].picture.large;
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
