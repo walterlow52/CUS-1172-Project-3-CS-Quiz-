@@ -68,7 +68,7 @@ function handle_quiz(e) {
   if (quiz_application.view == "#quizView") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = questions[quiz_application.question_i];
+      quiz_application.model = JSON.questions[quiz_application.question_i];
       question_view(quiz_application);
       update(quiz_application);
     }
