@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
      document.querySelector("#showdata").innerHTML = HTMLstring;
     }
   }
-});
 
  var quiz_model = [
       {
