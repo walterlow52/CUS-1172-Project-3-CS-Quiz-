@@ -1,76 +1,64 @@
 "questions": [
 "quizQuestion1": {
-      "question1": "Which programming language is used for web development?", 
-      "1A": "SQL",
-      "1B": "Bootstrap",
+      "type": "MC",
+      "question": "Which programming language is used for web development?", 
       "answer": "HTML",
-      "1D": "All of the above"
+      "choices": ["SQL", "Bootstrap", "HTML", "All of the above"],
     },
   "quizQuestion2": {
-    "question2": "What does HTML stand for?",
-    "2A": "Highlight Machine Language",
-    "2B": "Hightext Machine Language",
-    "2C": "Hypertext Makeup Language",
+    "type": "MC",
+    "question": "What does HTML stand for?",
     "answer": "Hypertext Markup Language"
+    "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"],
   },
   "quizQuestion3": {
-    "question3": "What is the purpose of CSS?",
-    "3A": "To brag to someone that you know CSS",
-    "3B": "To store values throughout the HTML webpage",
+    "type": "MC",
+    "question": "What is the purpose of CSS?",
     "answer": "To style an HTML webpage",
-    "3D": "All of the above"
+    "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"],
   },
   "-quizQuestion4-": {
-    "question4": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
-    "4A": " ",
-    "answer": "Hightext Machine Learning",
+    "question": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
+    "4A": "<script src = \"JavaScript.js\">",
+    "answer": "<script src = \"JavaScript.js\"> </script>",
     "4C": "Hypertext Makeup Language",
     "4D": "Hypertext Markup Language"
   },
   "quizQuestion5": {
     "type": "true_false",
-    "question5": "Bootstrap is an effective way of styling an HTML webpage.",
+    "question": "Bootstrap is an effective way of styling an HTML webpage.",
     "answer": "true",
-    "options": ["true", "false"],
+    "choices": ["true", "false"],
   },
   "quizQuestion6": {
-    "question6": "The SQL programming language focuses on: ",
+    "type": "MC",
+    "question": "The SQL programming language focuses on: ",
     "answer": "databases",
-    "6B": "styling",
-    "6C": "development",
-    "6D": "none of the above"
+    "choices": ["databases", "styling", "development", "none of the above"],
   },
   "quizQuestion7": {
     "type": "true_false"
-    "question7": "Tableau allows the user to create a 3D representation of a certain dataset.",
+    "question": "Tableau allows the user to create a 3D representation of a certain dataset.",
     "answer": "true",
     "options": ["true", "false"],
   },
 "quizQuestion8": {
-    "question2": "What are the data types that displays number values in Java?",
-    "8A": "int",
-    "8B": "double",
-    "8C": "string",
-    "8D": "boolean"
-    "8E": "both A & C",
+    "type": "MC",
+    "question": "What are the data types that displays number values in Java?",
     "answer": "both A & B",
-    "8G": "both C & D",
-    "8H": "both B & D",
-    "8I": "none of the above",
-    "8J": "all of the above (A-D)",
+    "choices": ["int", "double", "string", "boolean", "both A & C", "both A & B", "both C & D", "both B & D", "none of the above", "all of the above (A-D)"],
   },
 "quizQuestion9": {
-    "question2": "Which of the following is a type of loop in Java?",
-    "9A": "For",
-    "9B": "While",
-    "9C": "Do-while",
+    "type": "MC",
+    "question": "Which of the following is a type of loop in Java?",
     "answer": "all of the above"
+    "choices": ["For", "While", "Do-while", "all of the above"],
   },
 "quizQuestion10": {
-    "type": "true_false"
-    "question10": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
+    "type": "true_false",
+    "question": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
     "answer": "true",
-    "options": ["true", "false"],
+    "choices": ["true", "false"],
   }
   ]
   
