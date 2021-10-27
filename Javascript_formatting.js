@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-  /*document.querySelector("#fetch").onsubmit = () => {
+  document.querySelector("#fetch").onsubmit = () => {
     fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
     }
-  }*/
+  }
 
  var quiz_model = [
       {
