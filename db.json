@@ -74,50 +74,50 @@
 },
 {
     "type" : "text",
-    "question" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "answer" : "print(\"Hello World\")",
+    "question" : "What does the \"import java.util.Scanner;\" add to a Java program?",
+    "answer" : "a scanner",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "What does DDoS stand for?",
+    "correctAnswer" : "Distributed Denial of Service",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "Type the HTML snippet that links a CSS file to an HTML file (name the CSS file \"CSS_styling.css\"): ",
+    "correctAnswer" : "<link rel=\"stylesheet\" href=\"CSS_styling.css\">",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "How many times does this loop run?    int i = 0;  while (i < 10) {  System.out.println(i);  i++;  }",
+    "correctAnswer" : "10",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "What SQL command allows the user to create a new database? (type the command in all caps)",
+    "correctAnswer" : "CREATE DATABASE",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "-questionText-" : "Which version of Bootstrap have we been using throughout this class? (type in the number)",
+    "correctAnswer" : "4",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "Find the index of \"BMW\" in the array: [",
+    "correctAnswer" : "5",
     "answerId" : "answer_to_question"
 },
 {
     "questionType" : "text",
-    "questionText" : "Type a print statement for Python below (let the string be \"Hello World\"",
-    "correctAnswer" : "print(\"Hello World\")",
+    "questionText" : "",
+    "correctAnswer" : "",
     "answerId" : "answer_to_question"
 }
  ]
