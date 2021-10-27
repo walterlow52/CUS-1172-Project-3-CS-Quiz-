@@ -8,7 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector("#fetch").onsubmit = () => {
+  create_user_view(1)
+});
+
+const create_user_view = async (user_idx) => {
+  const data = await fetch("https://randomuser.me/api")
+  const model = await data.json()
+  const html_element = render_widget(model, '#user_view')
+  document.querySelector("#app_widget").innerHTML = html_element;
+}
+
+const render_widget = (model, view) => {
+  template_source = document.querySelector(view).innerHTML
+  var template = Handlebars.compile(template_source);
+  console.log(model)
+  var html_widget_element = template(model)
+  console.log(html_widget_element)
+  return html_widget_element
+}
+  /*document.querySelector("#fetch").onsubmit = () => {
     fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
@@ -28,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
      document.querySelector("#showdata").innerHTML = HTMLstring;
     }
   }
-});
+});*/
 
  var quiz_model = [
       {
