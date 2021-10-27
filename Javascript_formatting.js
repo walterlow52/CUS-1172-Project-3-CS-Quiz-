@@ -7,33 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-const create_user_view = async (user_idx) => {
-  const data = await fetch('https://github.com/walterlow52/CUS-1172-Project-3/blob/[main|master]/db.json')
-  const model_ = await data.json()
-  const html_element = template_view(model_,'#user_view')
-  document.querySelector("#app_widget").innerHTML = html_element;
-}
-
-  /*function fetch_data() {
-    fetch('https://randomuser.me/api/').then(
+  function fetch_data() {
+    fetch('https://github.com/walterlow52/CUS-1172-Project-3/blob/[main|master]/db.json').then(
     (response) => {
       return response.json()
     }
   ).then((data) => {
-      updateDOM(data);
+      template_view();
   }
 ).catch( (err) => {
   console.error(err);
 }
-)*/
+)
       
     /*function updateDOM(data) {
      let image = data.results[0].picture.large;
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
-    }
-}*/
+    }*/
+}
 
  var quiz_model = [
       {
