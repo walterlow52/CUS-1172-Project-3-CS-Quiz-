@@ -24,12 +24,19 @@
     "answer": "<script src = \"JavaScript.js\"> </script>",
     "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>"] 
   },
- {
+{
     "type": "true_false",
     "question": "Bootstrap is an effective way of styling an HTML webpage.",
     "answer": "true",
     "choices": ["true", "false"]
+  },
+{
+    "type": "MC",
+    "question": "The SQL programming language focuses on: ",
+    "answer": "databases",
+    "choices": ["databases", "styling", "development", "none of the above"]
   }
+
   ]
 }
   
