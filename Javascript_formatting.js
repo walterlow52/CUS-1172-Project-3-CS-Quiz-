@@ -20,7 +20,7 @@ const create_user_view = async (user_idx) => {
 }
 
 //use template view
-const render_view = (model_, view_) => {
+const render_widget = (model_, view_) => {
   template_source = document.querySelector(view_).innerHTML
   var template_ = Handlebars.compile(template_source);
   console.log(model_)
