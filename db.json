@@ -5,25 +5,31 @@
       "question": "Which programming language is used for web development?", 
       "answer": "HTML",
       "choices": ["SQL", "Bootstrap", "HTML", "All of the above"]
-    },
+  },
 { 
       "type": "MC",
       "question": "What does HTML stand for?",
       "answer": "Hypertext Markup Language",
       "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"]
-    },
+  },
 {
     "type": "MC",
     "question": "What is the purpose of CSS?",
     "answer": "To style an HTML webpage",
     "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"]
-    },
+  },
 {
     "type": "MC",
     "question": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
     "answer": "<script src = \"JavaScript.js\"> </script>",
     "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>"] 
-    }
+  },
+ {
+    "type": "true_false",
+    "question": "Bootstrap is an effective way of styling an HTML webpage.",
+    "answer": "true",
+    "choices": ["true", "false"]
+  }
   ]
 }
   
