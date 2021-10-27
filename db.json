@@ -8,7 +8,7 @@
   "quizQuestion2": {
     "type": "MC",
     "question": "What does HTML stand for?",
-    "answer": "Hypertext Markup Language"
+    "answer": "Hypertext Markup Language",
     "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"],
   },
   "quizQuestion3": {
@@ -37,7 +37,7 @@
     "choices": ["databases", "styling", "development", "none of the above"],
   },
   "quizQuestion7": {
-    "type": "true_false"
+    "type": "true_false",
     "question": "Tableau allows the user to create a 3D representation of a certain dataset.",
     "answer": "true",
     "options": ["true", "false"],
@@ -51,7 +51,7 @@
 "quizQuestion9": {
     "type": "MC",
     "question": "Which of the following is a type of loop in Java?",
-    "answer": "all of the above"
+    "answer": "all of the above",
     "choices": ["For", "While", "Do-while", "all of the above"],
   },
 "quizQuestion10": {
