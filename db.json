@@ -21,7 +21,7 @@
     "type": "MC",
     "question": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
     "answer": "<script src = \"JavaScript.js\"> </script>",
-    "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>], 
+    "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>"], 
   },
   "quizQuestion5": {
     "type": "true_false",
@@ -59,7 +59,7 @@
     "answer": "true",
     "choices": ["true", "false"],
   }
-  ]
+
   
   "profile": {
     "name": "typicode"
