@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   function fetch_data() {
-    fetch('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db').then(
+    fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
     }
