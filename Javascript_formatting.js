@@ -143,9 +143,9 @@ function update(quiz_application) {
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
-const template_view = (Model_, View_) => {
-  template_src = document.querySelector(View_).innerHTML
+const template_view = (model_, view_) => {
+  template_src = document.querySelector(view_).innerHTML;
   var template = Handlebars.compile(template_src);
-  var html_template = template({...Model_, ...quiz_application})
+  var html_template = template({...model_, ...quiz_application})
   return html_template
 }
