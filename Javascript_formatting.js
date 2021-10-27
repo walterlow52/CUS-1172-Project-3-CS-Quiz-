@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-  document.querySelector("#fetch").onsubmit = function() {
+  function fetch_data() {
     fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
