@@ -1,4 +1,4 @@
-{ "questions": [
+"questions": [
 {
       "type": "MC",
       "question": "Which programming language is used for web development?", 
@@ -58,11 +58,11 @@
     "question": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
     "answer": "true",
     "choices": ["true", "false"],
- 
+ )
 ]
   
   "profile": {
     "name": "typicode"
   }
-}
+
 
