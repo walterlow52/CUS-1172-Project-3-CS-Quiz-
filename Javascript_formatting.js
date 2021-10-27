@@ -116,7 +116,7 @@ function check_answer (user_answer, user_model) {
   return false;
 }
 
-function update_question () {
+function update_question (quiz_application) {
   if (quiz_application.question < questions.length-1) {
     quiz_applcation.question = quiz_application.question + 1;
     quiz_applicatoin.model = questions[quiz_application.question];
