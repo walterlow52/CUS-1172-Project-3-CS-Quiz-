@@ -118,7 +118,7 @@ function check_answer (user_answer, user_model) {
 
 function update_question (quiz_application) {
   if (quiz_application.question_i < questions.length-1) {
-    quiz_applcation.question_i = quiz_application.question_i + 1;
+    quiz_application.question_i = quiz_application.question_i + 1;
     quiz_application.model = questions[quiz_application.question_i];
   }
   else {
