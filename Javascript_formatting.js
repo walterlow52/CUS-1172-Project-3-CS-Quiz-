@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   function fetch_data() {
-    fetch('https://github.com/walterlow52/CUS-1172-Project-3/blob/[main|master]/db.json').then(
+    fetch('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db').then(
     (response) => {
       return response.json()
     }
