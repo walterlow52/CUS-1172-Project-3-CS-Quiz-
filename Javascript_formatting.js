@@ -7,26 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  create_user_view(1)
-});
-
 const create_user_view = async (user_idx) => {
-  //const data = await fetch(https://github.com/walterlow52/CUS-1172-Project-3/blob/[main|master]/db.json")
-  const data = await fetch("https://randomuser.me/api/?results=1")
+  const data = await fetch('https://github.com/walterlow52/CUS-1172-Project-3/blob/[main|master]/db.json')
   const model_ = await data.json()
-  const html_element = render_widget(model_,'#user_view')
+  const html_element = template_view(model_,'#user_view')
   document.querySelector("#app_widget").innerHTML = html_element;
-}
-
-//use template view
-const render_widget = (model_, view_) => {
-  template_source = document.querySelector(view_).innerHTML
-  var template_ = Handlebars.compile(template_source);
-  console.log(model_)
-  var html_widget_element = template_(model_)
-  console.log(html_widget_element)
-  return html_widget_element
 }
 
   /*function fetch_data() {
