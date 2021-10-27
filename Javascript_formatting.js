@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 )
       
-    function updateDOM(data) {
+    /*function updateDOM(data) {
      let image = data.results[0].picture.large;
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
-    }
+    }*/
   }
 
  var quiz_model = [
