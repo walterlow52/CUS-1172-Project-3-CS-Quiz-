@@ -47,7 +47,13 @@
     "question": "What are the data types that displays number values in Java?",
     "answer": "both A & B",
     "choices": ["int", "double", "string", "boolean", "both A & C", "both A & B", "both C & D", "both B & D", "none of the above", "all of the above (A-D)"]
-  }
+  },
+ {
+    "type": "MC",
+    "question": "Which of the following is a type of loop in Java?",
+    "answer": "all of the above",
+    "choices": ["For", "While", "Do-while", "all of the above"]
+ }
   ]
 }
   
