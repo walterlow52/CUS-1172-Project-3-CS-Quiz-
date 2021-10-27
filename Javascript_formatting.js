@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelector("#fetch").onsubmit = () => {
-    fetch('https://www.ixl.com/math/grade-4/identify-place-value-names').then(
+    fetch('https://randomuser.me/api/').then(
     (response) => {
       return response.json()
     }
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
      document.querySelector("#showdata").innerHTML = HTMLstring;
     }
   }
-});*/
+});
 
  var quiz_model = [
       {
