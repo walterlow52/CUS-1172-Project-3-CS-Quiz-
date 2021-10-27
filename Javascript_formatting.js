@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return response.json()
     }
   ).then((data) => {
-      template_view();
+      update();
   }
 )/*.catch( (err) => {
   console.error(err);
