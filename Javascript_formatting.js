@@ -47,8 +47,8 @@ const render_view = (model_, view_) => {
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
-    }*/
-  }
+    }
+}*/
 
  var quiz_model = [
       {
