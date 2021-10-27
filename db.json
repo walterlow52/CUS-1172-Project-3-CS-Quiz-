@@ -52,7 +52,7 @@
     "question": "Which of the following is a type of loop in Java?",
     "answer": "all of the above",
     "choices": ["For", "While", "Do-while", "all of the above"],
-  
+ },
  {
     "type": "true_false",
     "question": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
