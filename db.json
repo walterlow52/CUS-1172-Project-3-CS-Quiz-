@@ -11,7 +11,14 @@
       "question": "What does HTML stand for?",
       "answer": "Hypertext Markup Language",
       "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"]
+    },
+{
+    "type": "MC",
+    "question": "What is the purpose of CSS?",
+    "answer": "To style an HTML webpage",
+    "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"]
     }
+
   ]
 }
   
