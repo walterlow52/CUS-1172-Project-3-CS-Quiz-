@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
   ).then((data) => {
       template_view();
   }
-)/*.catch( (err) => {
+).catch( (err) => {
   console.error(err);
 }
-)*/
+)
       
     /*function updateDOM(data) {
      let image = data.results[0].picture.large;
