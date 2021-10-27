@@ -34,7 +34,7 @@
     "question": "The SQL programming language focuses on: ",
     "answer": "databases",
     "choices": ["databases", "styling", "development", "none of the above"],
-  
+  },
    {
     "type": "true_false",
     "question": "Tableau allows the user to create a 3D representation of a certain dataset.",
