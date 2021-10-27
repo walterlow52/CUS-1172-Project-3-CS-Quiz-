@@ -18,11 +18,10 @@
     "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"],
   },
   "-quizQuestion4-": {
+    "type": "MC",
     "question": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
-    "4A": "<script src = \"JavaScript.js\">",
     "answer": "<script src = \"JavaScript.js\"> </script>",
-    "4C": "Hypertext Makeup Language",
-    "4D": "Hypertext Markup Language"
+    "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>], 
   },
   "quizQuestion5": {
     "type": "true_false",
