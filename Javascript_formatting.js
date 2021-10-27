@@ -7,11 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  create_user_view(1)
-});
-
-}
   document.querySelector("#fetch").onsubmit = () => {
     fetch('https://randomuser.me/api/').then(
     (response) => {
