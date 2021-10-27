@@ -43,7 +43,7 @@
     "options": ["true", "false"]
   },
 {
-    "type": "MC",
+    "-type-": "MC",
     "question": "What are the data types that displays number values in Java?",
     "answer": "both A & B",
     "choices": ["int", "double", "string", "boolean", "both A & C", "both A & B", "both C & D", "both B & D", "none of the above", "all of the above (A-D)"]
@@ -110,7 +110,7 @@
 },
 {
     "questionType" : "text",
-    "questionText" : "Find the index of \"BMW\" in the array: [",
+    "questionText" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
     "correctAnswer" : "5",
     "answerId" : "answer_to_question"
 },
