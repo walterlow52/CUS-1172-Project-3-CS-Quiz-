@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const quiz_application = {
       view: "#quizView",
-      question: -1,
+      question_i: -1,
       model: {}
     }
     
@@ -69,18 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function handle_quiz(e) {
   if (quiz_application.view == "#quizView") {
     if (e.target.dataset.action == "start") {
-     quiz_application.question = 0
-      quiz_application.model = questions[quiz_application.question];
+     quiz_application.question_i = 0
+      quiz_application.model = questions[quiz_application.question_i];
       question_view(quiz_application);
-      update(quiz_appplication);
+      update(quiz_application);
     }
   }
   
   if (quiz_application.view == "#true/false_view") {
     if (e.target.dataset.action == "answerChoice") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
-      quiz_application.question = quiz_application.question + 1;
-      quiz_application.model = questions[quiz_application.question];
+      quiz_application.question_i = quiz_application.question_i + 1;
+      quiz_application.model = questions[quiz_application.question_i];
       question_view(quiz_application);
       update(quiz_application);
     }
@@ -117,18 +117,18 @@ function check_answer (user_answer, user_model) {
 }
 
 function update_question (quiz_application) {
-  if (quiz_application.question < questions.length-1) {
-    quiz_applcation.question = quiz_application.question + 1;
-    quiz_applicatoin.model = questions[quiz_application.question];
+  if (quiz_application.question_i < questions.length-1) {
+    quiz_applcation.question_i = quiz_application.question_i + 1;
+    quiz_application.model = questions[quiz_application.question_i];
   }
   else {
-    quiz_application.question = -2;
+    quiz_application.question_i = -2;
     quiz_application.model = {};
   }
 }
 
 function question_view(quiz_application) {
-  if (quiz_application.question == -2) {
+  if (quiz_application.question_i == -2) {
     quiz_application.view  = "#completion";
     return
   }
