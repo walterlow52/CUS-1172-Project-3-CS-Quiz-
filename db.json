@@ -59,8 +59,8 @@
     "question": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
     "answer": "true",
     "choices": ["true", "false"]
- },
-
+ }
+]
   
   "profile": {
     "name": "typicode"
