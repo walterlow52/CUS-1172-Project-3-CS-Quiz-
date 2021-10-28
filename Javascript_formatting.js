@@ -136,5 +136,6 @@ const template_view = (model_, view_) => {
   template_src = document.querySelector(view_).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...model_, ...quiz_application})
+  document.querySelector("#fetchData").innerHTML = html;
   return html_template
 }
