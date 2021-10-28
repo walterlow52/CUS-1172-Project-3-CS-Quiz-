@@ -34,7 +34,7 @@ const fetch_data = async () => {
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
-      var html_template = template({...model, ...quiz_application})
+      var html_template = quiz_template({...model, ...quiz_application})
       return html_template
     }
     
