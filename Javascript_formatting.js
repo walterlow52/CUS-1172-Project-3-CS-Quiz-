@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const model = await data.json()
-  const html_element = template_view(model, '#userView')
+  const html_element = user_view(model, '#userView')
   document.querySelector("#fetchData").innerHTML = html_element;
 }
 
@@ -34,6 +34,8 @@ const fetch_data = async () => {
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
+      var html_template = template({...model, ...quiz_application})
+      return html_template
     }
     
     const quiz_application = {
@@ -128,13 +130,13 @@ function question_view(quiz_application) {
 }
 
 function update(quiz_application) {
-  const html_element = template_view(quiz_application.model, quiz_application.view)
+  const html_element = user_view(quiz_application.model, quiz_application.view)
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
-const template_view = (model, view) => {
+/*const template_view = (model, view) => {
   template_src = document.querySelector(view).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...model, ...quiz_application})
   return html_template
-}
+}*/
