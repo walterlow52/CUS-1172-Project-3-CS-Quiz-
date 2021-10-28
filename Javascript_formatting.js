@@ -18,14 +18,6 @@ const fetch_data = async () => {
   document.querySelector("#fetchData").innerHTML = html_element;
 }
 
-    /*function updateDOM(data) {
-     let image = data.results[0].picture.large;
-     let email = data.results[0].email;
-     let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
-     document.querySelector("#showdata").innerHTML = HTMLstring;
-    }*/
-
-
  var quiz_model = [
       {
         name: "Quiz 1",
@@ -142,7 +134,7 @@ function update(quiz_application) {
 }
 
 const template_view = (model_, view) => {
-  template_src = document.querySelector(view).innerHTML;
+  template_src = document.querySelector(view).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...model_, ...quiz_application})
   return html_template
