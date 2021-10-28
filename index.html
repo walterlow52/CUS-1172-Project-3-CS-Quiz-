@@ -36,19 +36,13 @@
       </div>
       </form>
     
-      <form id = "fetch">
-        <div id = "showdata">
-        <button onclick = "fetch_data()"> Fetch data </button>
-        </div>
-      </form>
-    
     <div id = "quiz_view">
     </div>
     
     <div class = "container h-100">
       <div class = "row align-items-center h-100">
         <div class = "col-6 mx-auto">
-          <div id = "app_widget" class = "align-items-center">
+          <div id = "fetchData" class = "align-items-center">
           </div>
         </div>
       </div>
@@ -68,6 +62,25 @@
       <h2 class = "quiz-title" style = "color: blue;"> {{name}} </h2>
       <p class = "quiz_description"> {{message}} </p>
       </div> 
+    </script>
+  
+  <script id = "userView" type = "text/x-handlebars-template">
+    <div class = "container">
+    <div class = "row">
+    <div class = "col">
+    <div class = "counter">
+    <i class = "fa fa-lightbulb-o fa-2x"> </i>
+    <h2 class = "timer count-title count-number"> {{this.question_i}} </h2>
+    <p class = "count-text"> Question 1 </p>
+    </div>
+    <div class = "counter">
+    <i class = fa fa-bug fa-2x"> </i>
+    <h2 class = "timer count-title count-number"> {{this.question_i}} </h2>
+    <p class = "count-text"> Question 2 </p>
+    </div>
+    </div>
+    </div>
+    </div>
     </script>
   
   <script id = "quizView" type = "text/x-handlebars-template">
