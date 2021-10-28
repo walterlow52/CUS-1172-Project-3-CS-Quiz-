@@ -57,7 +57,7 @@ function handle_quiz(e) {
   if (quiz_application.view == "#quizView") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = JSON.parse(questions[quiz_application.question_i]);
+      quiz_application.model = data.json(questions[quiz_application.question_i]);
       question_view(quiz_application);
       update(quiz_application);
     }
@@ -133,9 +133,8 @@ function update(quiz_application) {
 }
 
 const template_view = (model_, view_) => {
-  var template_src = document.querySelector(view_).innerHTML;
+  template_src = document.querySelector(view_).innerHTML
   var template = Handlebars.compile(template_src);
   var html_template = template({...model_, ...quiz_application})
-  document.querySelector("#fetchData").innerHTML = html_template;
   return html_template
 }
