@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
   fetch_data(1)
+  
+  document.querySelector("#fetchData").onclick = (e) => {
+    handle_quiz(e)
+  }
 });
 
 const fetch_data = async () => {
