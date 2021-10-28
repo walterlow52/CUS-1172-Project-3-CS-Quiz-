@@ -7,26 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-  function fetch_data() {
-    fetch('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db').then(
-    (response) => {
-      return response.json()
-    }
-  ).then((data) => {
-      template_view();
-  }
-).catch( (err) => {
-  console.error(err);
+const fetch_data = async () => {
+  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
+  const _model_ = await data.json()
+  const html_element = template_view(_model_, '#userView')
+  document.querySelector("#fetchData").innerHTML = html_element;
 }
-)
-      
+
     /*function updateDOM(data) {
      let image = data.results[0].picture.large;
      let email = data.results[0].email;
      let HTMLstring = `<img src = "${image}"> <br> Email: ${email}`;
      document.querySelector("#showdata").innerHTML = HTMLstring;
     }*/
-}
+
 
  var quiz_model = [
       {
