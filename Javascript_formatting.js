@@ -132,7 +132,7 @@ function update(quiz_application) {
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
-const template_view = (model, view) => {
+const template_view = (model) => {
   template_src = document.querySelector(view).innerHTML
   var template = Handlebars.compile(template_src);
   console.log(model);
