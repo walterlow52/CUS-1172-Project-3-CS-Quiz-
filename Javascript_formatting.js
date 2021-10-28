@@ -41,13 +41,13 @@ const fetch_data = async () => {
     }
     
     const quiz_application = {
-      view: "#quizView",
+      view: "#view_quiz",
       question_i: -1,
       model: {}
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = "#quizView";
+  quiz_application.view = "#view_quiz";
   quiz_application.model = {
     action : "start"
   }
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handle_quiz(e) {
-  if (quiz_application.view == "#quizView") {
+  if (quiz_application.view == "#view_quiz") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
       quiz_application.model = data.json(questions[quiz_application.question_i]);
@@ -90,7 +90,7 @@ function handle_quiz(e) {
   
   if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
-      quiz_application.view = "#quizView";
+      quiz_application.view = "#view_quiz";
       quiz_application.model = {
         action : "start"
       }
