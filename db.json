@@ -43,10 +43,10 @@
     "choices": ["true", "false"]
   },
 {
-    "-type-": "MC",
-    "question": "What are the data types that displays number values in Java?",
-    "answer": "both A & B",
-    "choices": ["int", "double", "string", "boolean", "both A & C", "both A & B", "both C & D", "both B & D", "none of the above", "all of the above (A-D)"]
+    "type": "MC",
+    "question": "What are the data types that displays whole number values in Java?",
+    "answer": "int",
+    "choices": ["int", "double", "string", "boolean"]
   },
  {
     "type": "MC",
@@ -79,45 +79,45 @@
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "What does DDoS stand for?",
-    "correctAnswer" : "Distributed Denial of Service",
+    "type" : "text",
+    "question" : "What does DDoS stand for?",
+    "answer" : "Distributed Denial of Service",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "Type the HTML snippet that links a CSS file to an HTML file (name the CSS file \"CSS_styling.css\"): ",
-    "correctAnswer" : "<link rel=\"stylesheet\" href=\"CSS_styling.css\">",
+    "type" : "text",
+    "question" : "Type the HTML snippet that links a CSS file to an HTML file (name the CSS file \"CSS_styling.css\"): ",
+    "answer" : "<link rel=\"stylesheet\" href=\"CSS_styling.css\">",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "How many times does this loop run?    int i = 0;  while (i < 10) {  System.out.println(i);  i++;  }",
-    "correctAnswer" : "10",
+    "type" : "text",
+    "question" : "How many times does this loop run?    int i = 0;  while (i < 10) {  System.out.println(i);  i++;  }",
+    "answer" : "10",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "What SQL command allows the user to create a new database? (type the command in all caps)",
-    "correctAnswer" : "CREATE DATABASE",
+    "type" : "text",
+    "question" : "What SQL command allows the user to create a new database? (type the command in all caps)",
+    "answer" : "CREATE DATABASE",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "-questionText-" : "Which version of Bootstrap have we been using throughout this class? (type in the number)",
-    "correctAnswer" : "4",
+    "type" : "text",
+    "question" : "Which version of Bootstrap have we been using throughout this class? (type in the number)",
+    "answer" : "4",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
-    "correctAnswer" : "5",
+    "type" : "text",
+    "question" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
+    "answer" : "5",
     "answerId" : "answer_to_question"
 },
 {
-    "questionType" : "text",
-    "questionText" : "",
-    "correctAnswer" : "",
+    "type" : "text",
+    "question" : "What is the maximum amount of columns that the Bootstrap 4 grid system allows? (type in the number)",
+    "answer" : "12",
     "answerId" : "answer_to_question"
 }
  ]
