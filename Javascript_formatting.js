@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   fetch_data(1)
 });
 
