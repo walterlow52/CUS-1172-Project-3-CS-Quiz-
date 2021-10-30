@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
+const questions = [
+  {
+    questionType : "true_false",
+    questionText : "The earth is round",
+    correctAnswer : "true",
+    options : ["true", "false"],
+  }
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch_data(1)
 });
