@@ -1,3 +1,11 @@
+const questions = [
+  {
+    type : "true_false",
+    question : "The earth is round",
+    answer : "true",
+    choices : ["true", "false"],
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
@@ -9,15 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', () => {
   fetch_data(1)
 });
-
-const questions = [
-  {
-    type : "true_false",
-    question : "The earth is round",
-    answer : "true",
-    choices : ["true", "false"],
-  }
-
 
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
