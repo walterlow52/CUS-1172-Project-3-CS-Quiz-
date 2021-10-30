@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const questions = [
   {
-    questionType : "true_false",
-    questionText : "The earth is round",
-    correctAnswer : "true",
-    options : ["true", "false"],
+    type : "true_false",
+    question : "The earth is round",
+    answer : "true",
+    choices : ["true", "false"],
   }
 
 document.addEventListener('DOMContentLoaded', () => {
