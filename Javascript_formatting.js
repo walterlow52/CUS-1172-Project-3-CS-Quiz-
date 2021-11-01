@@ -140,7 +140,6 @@ function question_view(quiz_application) {
     quiz_application.view = "#MC_view";
     
   }
-}
 
 function update(quiz_application) {
   const html_element = template_view(quiz_application.model, quiz_application.view)
