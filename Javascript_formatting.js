@@ -35,13 +35,6 @@ const fetch_data = async () => {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
     }
-    
-    function display(data) {
-      let question_type = data.questions[0].question;
-      let question_answers = data.questions[0].choices;
-      let HTMLstring = `<h3> ${question_type} </h3> <br> <h4> ${question_answers} </h4>`;
-      document.querySelector("#showdata").innerHTML = HTMLstring;
-    }
 
     const quiz_application = {
       view: "#view_quiz",
