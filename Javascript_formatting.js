@@ -42,6 +42,8 @@ const fetch_data = async () => {
       model: {}
     }
     
+    const quiz_questions = JSON.parse(questions);
+    
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_quiz";
   quiz_application.model = {
@@ -57,7 +59,7 @@ function handle_quiz(e) {
   if (quiz_application.view == "#view_quiz") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = questions[quiz_application.question_i].json();
+      quiz_application.model = quiz_questions;
       question_view(quiz_application);
       update(quiz_application);
     }
