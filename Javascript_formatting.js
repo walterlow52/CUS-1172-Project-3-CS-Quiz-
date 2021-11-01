@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
+    let user_name = `
+    <input id = "fname" autocomplete = "off" autofocus placeholder = "First Name" type = "text">
+    <input id = "lname" autocomplete = "off" autofocus placeholder = "Last Name" type = "text">
+    <input id = "submit" type = "submit"> <br>
+    `;
     //alert(first_name + last_name);
 };
 });
