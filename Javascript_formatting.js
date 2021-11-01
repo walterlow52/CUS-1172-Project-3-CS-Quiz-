@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetch_data(1)
+  //fetch_data(1)
   
 const questions = [
   {
