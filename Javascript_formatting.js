@@ -2,27 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector("#project").onsubmit = function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
-    let user_name = `
-    <input id = "fname" autocomplete = "off" autofocus placeholder = "First Name" type = "text">
-    <input id = "lname" autocomplete = "off" autofocus placeholder = "Last Name" type = "text">
-    <input id = "submit" type = "submit"> <br>
-    `;
     //alert(first_name + last_name);
-};
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  fetch_data(1)
-});
-
-const fetch_data = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
-  const model = await data.json()
-  const html_element = template_view(model, '#view_quiz')
-  document.querySelector("#fetchData").innerHTML = html_element;
-}
-
- var quiz_model = [
+    
+    var quiz_model = [
       {
         name: "Quiz 1",
         message: "Welcome to Quiz 1! You may begin!"
@@ -40,6 +22,38 @@ const fetch_data = async () => {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_quiz").innerHTML = html;
     }
+};
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetch_data(1)
+});
+
+const fetch_data = async () => {
+  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
+  const model = await data.json()
+  const html_element = template_view(model, '#view_quiz')
+  document.querySelector("#fetchData").innerHTML = html_element;
+}
+
+ /*var quiz_model = [
+      {
+        name: "Quiz 1",
+        message: "Welcome to Quiz 1! You may begin!"
+      },
+      {
+        name: "Quiz 2",
+        message: "Welcome to Quiz 2! You may begin!"
+      }
+    ];
+    
+    var user_view = (quiz_id, quiz_model_Index) => {
+      console.log("Take Quiz view");
+      var srce = document.querySelector(quiz_id).innerHTML;
+      var quiz_template = Handlebars.compile(srce);
+      var html = quiz_template(quiz_model[quiz_model_Index]);
+      document.querySelector("#view_quiz").innerHTML = html;
+    }*/
     
     const quiz_application = {
       view: "#view_quiz",
