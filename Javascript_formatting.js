@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
-  const model = await data.json()
-  const html_element = template_view(model, '#view_quiz')
+  const model_ = await data.json()
+  const html_element = template_view(model_, '#view_quiz')
   document.querySelector("#fetchData").innerHTML = html_element;
 }
 
