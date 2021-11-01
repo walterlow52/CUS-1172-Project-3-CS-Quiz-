@@ -134,12 +134,11 @@ function question_view(quiz_application) {
 
   if (quiz_application.model.type == "true_false")
     quiz_application.view = "#true/false_view";
-  else if (quiz_application.model.type == "text") {
+  else if (quiz_application.model.type == "text") 
     quiz_application.view = "#text_view";
-  }
-  else if (quiz_application.model.type == "MC" { 
+  else if (quiz_application.model.type == "MC"  
     quiz_application.view = "#MC_view";
-    }
+    
   }
 }
 
