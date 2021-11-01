@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
+    return action;
   }
-  return action;
   update(quiz_application);
   document.querySelector("#quiz_view").onclick = (e) => {
       handle_quiz(e)
@@ -102,8 +102,8 @@ function handle_quiz(e) {
       quiz_application.view = "#view_intro";
       quiz_application.model = {
         action : "start"
+        return action;
       }
-      return action;
       update(quiz_application);
     }
   }
