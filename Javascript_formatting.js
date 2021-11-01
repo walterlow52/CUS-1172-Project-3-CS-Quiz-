@@ -86,6 +86,16 @@ function handle_quiz(e) {
        }
     }
   
+  if (quiz_application.view == "MC_view") {
+    if (e.target.dataset.action == "submit") {
+      correct = check_answer(e.target.dataset.answer, quiz_application.model);
+      quiz_application.question_i = quiz_application.question_i + 1;
+      quiz_application.model = questions[quiz_application.question_i];
+      question_view(quiz_application);
+      update(quiz_application);
+    }
+  }
+  
   if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
       quiz_application.view = "#view_quiz";
@@ -126,6 +136,9 @@ function question_view(quiz_application) {
     quiz_application.view = "#true/false_view";
   else if (quiz_application.model.type == "text") {
     quiz_application.view = "#text_view";
+  }
+  else if (quiz_application.model.type == "MC" {
+    quiz_application.view = "#MC_view";       
   }
 }
 
