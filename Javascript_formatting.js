@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   fetch_data(1)
-});
-
+  
 const questions = [
   {
     type : "true_false",
@@ -167,3 +166,4 @@ const template_view = (model, view) => {
   var html_template = template({...model, ...quiz_application})
   return html_template
 }
+});
