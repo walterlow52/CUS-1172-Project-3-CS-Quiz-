@@ -37,7 +37,7 @@ const fetch_data = async () => {
     }
 
     const quiz_application = {
-      view: "#view_quiz",
+      view: "#view_intro",
       question_i: -1,
       model: {}
     }
@@ -45,7 +45,7 @@ const fetch_data = async () => {
     //const quiz_questions = JSON.parse('{"questions": ["type", "question", "answer", "choices"] }');
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = "#view_quiz";
+  quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
   }
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handle_quiz(e) {
-  if (quiz_application.view == "#view_quiz") {
+  if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
       quiz_application.model = data[quiz_application.question_i];
@@ -98,7 +98,7 @@ function handle_quiz(e) {
   
   if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
-      quiz_application.view = "#view_quiz";
+      quiz_application.view = "#view_intro";
       quiz_application.model = {
         action : "start"
       }
