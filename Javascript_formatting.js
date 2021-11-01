@@ -10,6 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch_data(1)
 });
 
+const questions = [
+  {
+    type : "true_false",
+    question : "The earth is round",
+    answer : "true",
+    choices : ["true", "false"],
+  },
+  {
+    type : "text_input",
+    question : "What is the value of the expression 1+1",
+    answer : "2",
+    answerId : "answer_to_question"
+  }
+]
+
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const model_ = await data.json()
