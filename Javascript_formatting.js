@@ -42,7 +42,7 @@ const fetch_data = async () => {
       model: {}
     }
     
-    const quiz_questions = JSON.parse(questions);
+    const quiz_questions = JSON.parse('questions');
     
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_quiz";
