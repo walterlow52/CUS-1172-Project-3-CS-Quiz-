@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
-    fetch_data(1);
     user_view();
 };
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  fetch_data(1);
+});
 
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
