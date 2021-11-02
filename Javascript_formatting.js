@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-/*const fetch_data = async () => {
+const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const model_ = await data.json()
   const html_element = template_view(model_, '#view_intro')
   document.querySelector("#fetchData").innerHTML = html_element;
-}*/
+}
 
  var quiz_model = [
       {
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#view_intro").innerHTML = html;
     }
     
-  const fetch_data = async () => {
+  /*const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
   document.querySelector("#fetchData").innerHTML = html_element;
    // display(module);
-  }
+  }*/
   
   /*function display() {
     let quiz_text = module.choices[0].question;
