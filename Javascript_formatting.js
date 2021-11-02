@@ -44,7 +44,7 @@ const fetch_data = async () => {
     
     //const quiz_questions = JSON.parse('{"questions": ["type", "question", "answer", "choices"] }');
     
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
@@ -59,14 +59,14 @@ function handle_quiz(e) {
   if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = questions[quiz_application.question_i];
+      quiz_application.model = questions[quiz_application.question_i].json();
       question_view(quiz_application);
       update(quiz_application);
     }
   }
   
   if (quiz_application.view == "#true/false_view") {
-    if (e.target.dataset.action == "answerChoice") {
+    if (e.target.dataset.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question_i = quiz_application.question_i + 1;
       quiz_application.model = questions[quiz_application.question_i];
@@ -87,7 +87,7 @@ function handle_quiz(e) {
     }
   
   if (quiz_application.view == "MC_view") {
-    if (e.target.dataset.action == "submit") {
+    if (e.target.dataset.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question_i = quiz_application.question_i + 1;
       quiz_application.model = questions[quiz_application.question_i];
@@ -108,17 +108,17 @@ function handle_quiz(e) {
   
 }
 
-function check_answer (user_answer, user_model) {
-  if (user_answer == user_model.answer) {
+function check_answer (answer, model) {
+  if (answer == model.answer) {
     return true;
   }
   return false;
 }
 
 function update_question (quiz_application) {
-  if (quiz_application.question_i < questions.length-1) {
+  if (quiz_application.question_i < questions.length - 1) {
     quiz_application.question_i = quiz_application.question_i + 1;
-    quiz_application.model = questions[quiz_application.question_i];
+    quiz_application.model = questions[quiz_application.question_i].json();
   }
   else {
     quiz_application.question_i = -2;
