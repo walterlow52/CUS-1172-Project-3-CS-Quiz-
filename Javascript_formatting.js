@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
-    fetch_data(1);
+    //fetch_data(1);
     user_view();
 };
 });
