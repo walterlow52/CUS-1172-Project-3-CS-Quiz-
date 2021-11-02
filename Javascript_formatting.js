@@ -3,12 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
+    fetch_data(1);
 };
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   fetch_data(1)
-});
+});*/
 
 const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
@@ -20,7 +21,7 @@ const fetch_data = async () => {
  var quiz_model = [
       {
         name: "Quiz 1",
-        message: "Welcome to Quiz 1! You may begin!" + first_name;
+        message: "Welcome to Quiz 1! You may begin!"
       },
       {
         name: "Quiz 2",
