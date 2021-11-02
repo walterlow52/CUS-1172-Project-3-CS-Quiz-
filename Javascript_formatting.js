@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 
-const fetch_data = async () => {
+/*const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const model_ = await data.json()
   const html_element = template_view(model_, '#view_intro')
-  document.querySelector("#fetchData").innerHTML = html_element;
+  document.querySelector("#fetchData").innerHTML = html_element;*/
 }
 
  var quiz_model = [
@@ -33,6 +33,12 @@ const fetch_data = async () => {
       var html = quiz_template(quiz_model[quiz_model_Index]);
       document.querySelector("#view_intro").innerHTML = html;
     }
+    
+  const fetch_data = async () => {
+  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
+  const model_ = await data.json()
+  const html_element = template_view(model_, '#view_intro')
+  document.querySelector("#fetchData").innerHTML = html_element;
 
     const quiz_application = {
       view: "#view_intro",
