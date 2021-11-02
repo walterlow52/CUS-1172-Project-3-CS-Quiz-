@@ -20,7 +20,7 @@ const fetch_data = async () => {
  var quiz_model = [
       {
         name: "Quiz 1",
-        message: "Welcome to Quiz 1! You may begin!"
+        message: "Welcome to Quiz 1! You may begin!" + first_name;
       },
       {
         name: "Quiz 2",
