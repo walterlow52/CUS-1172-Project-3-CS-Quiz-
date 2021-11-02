@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const model_ = await data.json()
   const html_element = template_view(model_, '#view_intro')
   document.querySelector("#fetchData").innerHTML = html_element;
+  }
 
     const quiz_application = {
       view: "#view_intro",
