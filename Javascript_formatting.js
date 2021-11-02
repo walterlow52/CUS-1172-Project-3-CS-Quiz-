@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
    display(module);
   }
   
-  function display() {
+  function display(module) {
     let quiz_text = module.choices[0].question;
     let quiz_pick = module.choices[0].choices;
     let quiz_answer = module.choices[0].answer;
