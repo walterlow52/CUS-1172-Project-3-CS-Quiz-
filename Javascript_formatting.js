@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
     fetch_data(1);
+    user_view();
 };
 });
 
