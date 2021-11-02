@@ -3,20 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let first_name = document.querySelector('#fname').value;
     let last_name = document.querySelector('#lname').value;
     //alert(first_name + last_name);
-    user_view();
 };
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   fetch_data(1);
 });
-
-/*const fetch_data = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
-  const model_ = await data.json()
-  const html_element = template_view(model_, '#view_intro')
-  document.querySelector("#fetchData").innerHTML = html_element;
-}*/
 
  var quiz_model = [
       {
@@ -42,16 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
   document.querySelector("#fetchData").innerHTML = html_element;
-   // display(module);
+   display(module);
   }
   
-  /*function display() {
+  function display() {
     let quiz_text = module.choices[0].question;
     let quiz_pick = module.choices[0].choices;
     let quiz_answer = module.choices[0].answer;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> ${quiz_pick} <br> ${quiz_answer} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
-  }*/
+  }
 
     const quiz_application = {
       view: "#view_intro",
