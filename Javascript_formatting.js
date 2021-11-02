@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
   document.querySelector("#fetchData").innerHTML = html_element;
-    display(module);
+   // display(module);
   }
   
   function display() {
