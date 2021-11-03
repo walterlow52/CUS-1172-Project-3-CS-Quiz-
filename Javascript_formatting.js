@@ -69,15 +69,13 @@ function handle_quiz(e) {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
       quiz_application.model = module.questions[quiz_application.question_i].question;
-      let HTML_string = `${quiz_application.model}`;
-      document.querySelector("#view_intro").innerHTML = HTML_string;
       question_view(quiz_application);
       update(quiz_application);
     }
   }
   
   if (quiz_application.view == "#true/false_view") {
-    if (e.target.dataset.action == "answer") {
+    if (e.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question_i = quiz_application.question_i + 1;
       quiz_application.model = module.questions[quiz_application.question_i].question;
