@@ -25,12 +25,11 @@ li {
 }
 
 h3 {
-  background-color: black;
-  color: orange;
+  background-color: orange;
+  color: black;
 }
 
 h4 {
-  border-style: solid;
-  border-color: orange;
-  color: darkslategray;
+  background-color: black;
+  color: lime;
 }
