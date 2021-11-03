@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function display(module) {
-    let quiz_text = module.questions[17].question;
-    let quiz_type = module.questions[17].type;
-    let quiz_answer = module.questions[17].answer;
-    let quiz_options = module.questions[17].choices;
+    let quiz_text = module.questions[6].question;
+    let quiz_type = module.questions[6].type;
+    let quiz_answer = module.questions[6].answer;
+    let quiz_options = module.questions[6].choices;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> ${quiz_answer} <br> ${quiz_options} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
   }
