@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_intro";
   quiz_application.model = {
-    action : "start"
+    action : "#start"
   }
   update(quiz_application);
   document.querySelector("#quiz_view").onclick = (e) => {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handle_quiz(e) {
   if (quiz_application.view == "#view_intro") {
-    if (e.target.dataset.action == quiz_application.model.action) {
+    if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0;
       quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
