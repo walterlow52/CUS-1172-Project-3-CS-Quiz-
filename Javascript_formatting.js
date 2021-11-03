@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //const quiz_questions = JSON.parse('{"questions": ["type", "question", "answer", "choices"] }');
     
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
@@ -69,8 +69,8 @@ function handle_quiz(e) {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
       quiz_application.model = module.questions[quiz_application.question_i].question;
-      let HTMLstring = `${quiz_application.model}`;
-      document.querySelector("#start_quiz").innerHTML = HTMLstring;
+      let HTML_string = `${quiz_application.model}`;
+      document.querySelector("#view_intro").innerHTML = HTML_string;
       question_view(quiz_application);
       update(quiz_application);
     }
