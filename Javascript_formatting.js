@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-function handle_quiz(e) {
+function handle_quiz(e, module) {
   if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
