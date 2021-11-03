@@ -25,14 +25,12 @@ li {
 }
 
 h3 {
-  border-style: solid;
-  border-color: orange;
   background-color: black
   color: orange;
 }
 
 h4 {
   border-style: dashed;
-  border-color: black;
+  border-color: orange;
   color: lime;
 }
