@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
     const quiz_application = {
-      view: "#showdata",
+      view: "#view_intro",
       question_i: -1,
       model: {}
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = "#showdata";
+  quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
   }
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handle_quiz(e) {
-  if (quiz_application.view == "#showdata") {
+  if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == action) {
      quiz_application.question_i = 0;
       quiz_application.model = module.questions[quiz_application.question_i].question;
@@ -106,7 +106,7 @@ function handle_quiz(e) {
   
   if (quiz_application.view == "#completion") {
     if (e.target.dataset.action == "start_again") {
-      quiz_application.view = "#showdata";
+      quiz_application.view = "#view_intro";
       quiz_application.model = {
         action : "start"
       }
