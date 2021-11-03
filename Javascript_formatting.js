@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handle_quiz(e) {
   if (quiz_application.view == "#view_intro") {
-    if (e.target.dataset.action == action) {
+    if (e.target.dataset.action == quiz_application.model.action) {
      quiz_application.question_i = 0;
       quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
