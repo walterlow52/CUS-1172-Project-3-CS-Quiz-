@@ -95,9 +95,9 @@
     <div class = "row">
     <div class = "col">
     <div>
-      <span style="text-align:center"> {{this.question}}</span>
-      <button class = "btn btn-primary pull-left" data-action = "answerChoice" data-answer = "{{this.choices.[0]}}"> {{this.choices.[0]}} </button>
-      <button class = "btn btn-danger float-right" data-action = "answerChoice" data-answer = "{{this.choices.[1]}}"> {{this.choices.[1]}} </button>
+      <span style="text-align:center"> {{this.module.questions[quiz_application.question_i].question}}</span>
+      <button class = "btn btn-primary pull-left" data-action = "answerChoice" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[0]}}"> {{this.module.questions[quiz_application.question_i].choices.[0]}} </button>
+      <button class = "btn btn-danger float-right" data-action = "answerChoice" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[1]}}"> {{this.module.questions[quiz_application.question_i].choices.[1]}} </button>
     </div>
     </div>
     </div>
