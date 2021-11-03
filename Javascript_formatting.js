@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let quiz_answer = module.questions[6].answer;
     let quiz_options = module.questions[6].choices;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> ${quiz_answer} <br> ${quiz_options} </h4>`;
-    document.querySelector("#showdata").innerHTML = HTMLstring;
+    document.querySelector("#start_quiz").innerHTML = HTMLstring;
   }
 
     const quiz_application = {
