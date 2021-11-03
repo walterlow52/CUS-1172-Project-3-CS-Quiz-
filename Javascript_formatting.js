@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_intro";
   quiz_application.model = {
-    action : "#start"
+    action : "start"
   }
   update(quiz_application);
   document.querySelector("#quiz_view").onclick = (e) => {
@@ -75,7 +75,7 @@ function handle_quiz(e) {
   
   if (quiz_application.view == "#true/false_view") {
     if (e.target.dataset.action == "answer") {
-      correct = check_answer(e.target.dataset.answer, quiz_application.model);
+      correct = check_answer(e.target.dataset.answer, module.questions[quiz_application.model].answer);
       quiz_application.question_i = quiz_application.question_i + 1;
       quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
@@ -87,7 +87,7 @@ function handle_quiz(e) {
        if (e.target.dataset.action == "submit") {
      
            response = document.querySelector(`#${quiz_application.model.choices}`).value;
-           correct = check_answer(e.target.dataset.answerChoice, quiz_application.model);
+           correct = check_answer(e.target.dataset.answer, quiz_application.model);
            update_question(quiz_application);
            question_view(quiz_application);
            update(quiz_application);
@@ -96,7 +96,7 @@ function handle_quiz(e) {
   
   if (quiz_application.view == "MC_view") {
     if (e.target.dataset.action == "answer") {
-      correct = check_answer(e.target.dataset.answer, quiz_application.model);
+      correct = check_answer(e.target.dataset.answer, module.questions[quiz_application.model].answer);
       quiz_application.question_i = quiz_application.question_i + 1;
       quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
