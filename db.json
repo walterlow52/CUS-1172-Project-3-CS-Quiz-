@@ -70,61 +70,61 @@
     "type" : "text",
     "question" : "Type a print statement for Python below (let the string be \"Hello World\"):",
     "answer" : "print(\"Hello World\")",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "Type the HTML5 declaration statement below:",
     "answer" : "<!DOCTYPE html>",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "What does the \"import java.util.Scanner;\" add to a Java program?",
     "answer" : "a scanner",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "What does DDoS stand for?",
     "answer" : "Distributed Denial of Service",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "Type the HTML snippet that links a CSS file to an HTML file (name the CSS file \"CSS_styling.css\"): ",
     "answer" : "<link rel=\"stylesheet\" href=\"CSS_styling.css\">",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "How many times does this loop run?    int i = 0;  while (i < 10) {  System.out.println(i);  i++;  }",
     "answer" : "10",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "What SQL command allows the user to create a new database? (type the command in all caps)",
     "answer" : "CREATE DATABASE",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "Which version of Bootstrap have we been using throughout this class? (type in the number)",
     "answer" : "4",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
     "answer" : "5",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 },
 {
     "type" : "text",
     "question" : "What is the maximum amount of columns that the Bootstrap 4 grid system allows? (type in the number)",
     "answer" : "12",
-    "answerId" : "answer_to_question"
+    "choices" : "answer_to_question"
 }
  ]
 }
