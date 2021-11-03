@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function display(module) {
-    let quiz_text = module.questions[16].question;
-    let quiz_type = module.questions[16].type;
-    let quiz_answer = module.questions[16].answer;
+    let quiz_text = module.questions[17].question;
+    let quiz_type = module.questions[17].type;
+    let quiz_answer = module.questions[17].answer;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> ${quiz_answer} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
   }
