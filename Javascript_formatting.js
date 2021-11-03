@@ -70,7 +70,7 @@ function handle_quiz(e) {
      quiz_application.question_i = 0
       quiz_application.model = module.questions[quiz_application.question_i].question;
       let HTMLstring = `${quiz_application.model}`;
-      document.querySelector("#showdata").innerHTML = HTMLstring;
+      document.querySelector("#start_quiz").innerHTML = HTMLstring;
       question_view(quiz_application);
       update(quiz_application);
     }
