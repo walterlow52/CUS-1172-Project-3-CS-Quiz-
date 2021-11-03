@@ -131,13 +131,13 @@ function update_question (quiz_application) {
     quiz_application.model = module.questions[quiz_application.question_i].question;
   }
   else {
-    quiz_application.question_i = -20;
+    quiz_application.question_i = -2;
     quiz_application.model = {};
   }
 }
 
 function question_view(quiz_application) {
-  if (quiz_application.question_i == -20) {
+  if (quiz_application.question_i == -2) {
     quiz_application.view  = "#completion";
     return
   }
