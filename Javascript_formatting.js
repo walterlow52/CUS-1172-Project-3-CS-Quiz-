@@ -68,7 +68,7 @@ function handle_quiz(e) {
   if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = JSON.parse(questions[quiz_application.question_i]);
+      quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
       update(quiz_application);
     }
@@ -78,7 +78,7 @@ function handle_quiz(e) {
     if (e.target.dataset.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question_i = quiz_application.question_i + 1;
-      quiz_application.model = JSON.parse(questions[quiz_application.question_i]);
+      quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
       update(quiz_application);
     }
@@ -99,7 +99,7 @@ function handle_quiz(e) {
     if (e.target.dataset.action == "answer") {
       correct = check_answer(e.target.dataset.answer, quiz_application.model);
       quiz_application.question_i = quiz_application.question_i + 1;
-      quiz_application.model = JSON.parse(questions[quiz_application.question_i]);
+      quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
       update(quiz_application);
     }
@@ -127,7 +127,7 @@ function check_answer (answer, model) {
 function update_question (quiz_application) {
   if (quiz_application.question_i < questions.length - 1) {
     quiz_application.question_i = quiz_application.question_i + 1;
-    quiz_application.model = JSON.parse(questions[quiz_application.question_i]);
+    quiz_application.model = module.questions[quiz_application.question_i].question;
   }
   else {
     quiz_application.question_i = -2;
