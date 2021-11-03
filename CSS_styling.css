@@ -30,7 +30,7 @@ h3 {
 }
 
 h4 {
-  border-style: dashed;
+  border-style: solid;
   border-color: orange;
   color: darkslategray;
 }
