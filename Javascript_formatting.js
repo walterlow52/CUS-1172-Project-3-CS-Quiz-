@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
-  document.querySelector("#fetchData").innerHTML = html_element;
+  //document.querySelector("#fetchData").innerHTML = html_element;
    display(module);
   }
   
