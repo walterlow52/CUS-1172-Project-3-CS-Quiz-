@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function display(module) {
     let quiz_text = module.questions[16].question;
-    let quiz_pick = module.questions[16].choices;
+    let quiz_pick = module.questions[16].choices[0,1,2,3,];
     let quiz_answer = module.questions[16].answer;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> ${quiz_pick} <br> ${quiz_answer} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
