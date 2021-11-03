@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const quiz_application = {
       view: "#view_intro",
-      question_i: 0,
+      question_i: -1,
       model: {}
     }
     
