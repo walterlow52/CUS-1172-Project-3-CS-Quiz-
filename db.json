@@ -1,6 +1,12 @@
 {
       "questions": [
 {
+    "type": "true_false",
+    "question": "Eclipse is an IDE for Java.",
+    "answer": "true",
+    "choices": ["true", "false"]
+  },
+{
       "type": "MC",
       "question": "Which programming language is used for web development?", 
       "answer": "HTML",
