@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = "#view_intro";
+  document.querySelector("#view_intro").innerHTML = quiz_application.view;
   quiz_application.model = {
     action : "start"
   }
