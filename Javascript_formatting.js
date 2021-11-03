@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       var srce = document.querySelector(quiz_id).innerHTML;
       var quiz_template = Handlebars.compile(srce);
       var html = quiz_template(quiz_model[quiz_model_Index]);
-      document.querySelector("#showdata").innerHTML = html;
+      document.querySelector("#start_quiz").innerHTML = html;
     }
     
   const fetch_data = async () => {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let quiz_answer = module.questions[6].answer;
     let quiz_options = module.questions[6].choices;
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> ${quiz_answer} <br> ${quiz_options} </h4>`;
-    document.querySelector("#start_quiz").innerHTML = HTMLstring;
+    document.querySelector("#showdata").innerHTML = HTMLstring;
   }
 
     const quiz_application = {
