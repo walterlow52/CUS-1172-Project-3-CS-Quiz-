@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
    display(module);
-    handle_quiz(e);
+    handle_quiz(module);
   }
   
   function display(module) {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-function handle_quiz(e) {
+function handle_quiz(e, module) {
   if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
