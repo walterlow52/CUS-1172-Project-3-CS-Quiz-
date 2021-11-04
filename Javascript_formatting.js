@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
    display(module);
+    handle_quiz(e);
   }
   
   function display(module) {
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = fetch_data.module(questions[quiz_application.question_i].question);
+  quiz_application.view = "#view_intro";
   quiz_application.model = {
     action : "start"
   }
@@ -66,7 +67,7 @@ function handle_quiz(e) {
   if (quiz_application.view == "#view_intro") {
     if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0
-      quiz_application.model = module.questions[quiz_application.question_i].question;
+      quiz_application.model = fetch_data.module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
       update(quiz_application);
     }
