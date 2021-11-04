@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = display(module).questions[quiz_application.question_i].question;
+  quiz_application.view = fetch_data.module.questions[quiz_application.question_i].question;
   quiz_application.model = {
     action : "start"
   }
