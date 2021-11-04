@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handle_quiz(e, module) {
   if (quiz_application.view == "#view_intro") {
-    if (e.action == "start") {
+    if (e.target.dataset.action == "start") {
      quiz_application.question_i = 0;
       quiz_application.model = module.questions[quiz_application.question_i].question;
       question_view(quiz_application);
@@ -140,12 +140,15 @@ function question_view(quiz_application) {
     return
   }
 
-  if (quiz_application.model.type == "true_false")
+  if (quiz_application.model.type == "true_false") {
     quiz_application.view = "#true/false_view";
-  else if (quiz_application.model.type == "text") 
+  }
+  else if (quiz_application.model.type == "text") { 
     quiz_application.view = "#text_view";
-  else if (quiz_application.model.type == "MC")  
+  }
+  else if (quiz_application.model.type == "MC")  {
     quiz_application.view = "#MC_view";
+  }
     
   }
 
