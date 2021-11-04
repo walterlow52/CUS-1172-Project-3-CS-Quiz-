@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     action : "start"
   }
   update(quiz_application);
-  document.querySelector("#quiz_view").onclick = (e) => {
+  document.querySelector("#view_intro").onclick = (e) => {
       handle_quiz(e)
   }
 });
@@ -151,7 +151,7 @@ function question_view(quiz_application) {
 
 function update(quiz_application) {
   const html_element = template_view(quiz_application.model, quiz_application.view)
-  document.querySelector("#quiz_view").innerHTML = html_element;
+  document.querySelector("#view_intro").innerHTML = html_element;
 }
 
 const template_view = (model, view) => {
