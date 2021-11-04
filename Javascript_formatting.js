@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 document.addEventListener('DOMContentLoaded', () => {
-  quiz_application.view = "#view_intro";
+  quiz_application.view = module.questions[quiz_application.question_i].question;
   quiz_application.model = {
     action : "start"
   }
