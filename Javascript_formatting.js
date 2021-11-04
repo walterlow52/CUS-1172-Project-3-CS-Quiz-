@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let quiz_type = module.questions[6].type;
     let quiz_answer = module.questions[6].answer;
     let quiz_options = module.questions[6].choices;
-    let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> ${quiz_answer} <br> ${quiz_options} </h4>`;
+    let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> answer: ${quiz_answer} <br> ${quiz_options} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
   }
 
