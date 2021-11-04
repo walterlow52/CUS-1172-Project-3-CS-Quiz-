@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const module = await data.json()
   const html_element = template_view(module, '#view_intro')
    display(module);
-    handle_quiz(module);
+   handle_quiz(module);
   }
   
   function display(module) {
@@ -150,7 +150,7 @@ function question_view(quiz_application) {
   }
 
 function update(quiz_application) {
-  const html_element = template_view(quiz_application.model, quiz_application.view)
+  const html_element = template_view(module, '#view_intro');
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
