@@ -150,7 +150,7 @@ function question_view(quiz_application) {
   }
 
 function update(quiz_application) {
-  const html_element = template_view(quiz_application.model, '#view_intro');
+  const html_element = template_view(quiz_application.model, "#view_intro");
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
