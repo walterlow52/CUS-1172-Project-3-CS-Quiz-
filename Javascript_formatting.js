@@ -152,8 +152,8 @@ function question_view(quiz_application) {
     
   }
 
-function update(quiz_application, module) {
-  const html_element = template_view(module, '#view_intro');
+function update(quiz_application) {
+  const html_element = template_view(quiz_application.model, quiz_application.view);
   document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
