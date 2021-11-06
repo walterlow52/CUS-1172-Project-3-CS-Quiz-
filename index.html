@@ -86,7 +86,7 @@
     <div class = "row">
     <div class = "col">
     <div>
-      <span style="text-align:center"> {{this.module.questions[quiz_application.question_i].question}} </span>
+      <span style="text-align:center"> {{this.fetch_data.module.questions[quiz_application.question_i].question}} </span>
       <input type = "radio" id = "{{this.module.questions[quiz_application.question_i].choices}}" name = "answer"> <br> <br>
       <button class = "btn btn-light float-right" data-action = "answer" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[0]}}"> {{this.module.questions[quiz_application.question_i].choices.[0]}} </button>
       <button class = "btn btn-light float-right" data-action = "answer" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[1]}}"> {{this.module.questions[quiz_application.question_i].choices.[1]}} </button>
@@ -103,7 +103,7 @@
     <div class = "row">
     <div class = "col">
     <div>
-      <span style="text-align:center"> {{this.module.questions[quiz_application.question_i].question}} </span>
+      <span style="text-align:center"> {{this.fetch_data.module.questions[quiz_application.question_i].question}} </span>
       <button class = "btn btn-light float-right" data-action = "answer" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[0]}}"> {{this.module.questions[quiz_application.question_i].choices.[0]}} </button>
       <button class = "btn btn-light float-right" data-action = "answer" data-answer = "{{this.module.questions[quiz_application.question_i].choices.[1]}}"> {{this.module.questions[quiz_application.question_i].choices.[1]}} </button>
     </div>
@@ -117,7 +117,7 @@
     <div class = "row">
     <div class = "col">
     <div>
-      <span style = "text-align:center"> {{this.module.questions[quiz_application.question_i].question}} </span>
+      <span style = "text-align:center"> {{this.fetch_data.module.questions[quiz_application.question_i].question}} </span>
       <input type = "text" id = "{{this.module.questions[quiz_application.question_i].choices}}" name = "answer"> <br> <br>
       <button class = "btn btn-info float-right" data-action = "submit"> Submit </button>
     </div>
@@ -131,7 +131,7 @@
      <div class="row">
      <div class="col">
      <div>
-     <span id="feedback_string">Correct | Incorrect </span>
+     <span id="feedback_string"> Correct | Incorrect </span>
      <button class="btn btn-info float-right" data-action="ok"> OK </button>
      </div>
      </div>
