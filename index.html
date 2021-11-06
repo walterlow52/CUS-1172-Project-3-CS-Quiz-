@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang = "en">
   <head>
   <meta charset="utf-8">
@@ -56,10 +55,12 @@
       <h2 class = "quiz-title" style = "color: red;"> {{name}} </h2>
       <p class = "quiz_description" style = "color: red;"> {{message}} </p>
       </div> 
-    <div id = "view_intro">
+    <script id = "view_intro">
+    <div>
     <span> Press the button to begin the quiz          </span>
     <button class = "btn btn-danger" data-action = "{{this.action}}"> Start {{this.action}} </button>
-    </div>  
+    </div> 
+  </script>
   </script>
       
       <script id = "quiz_view2" type = "text/x-handlebars-template">
