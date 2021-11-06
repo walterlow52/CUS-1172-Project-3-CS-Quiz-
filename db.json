@@ -5,7 +5,8 @@
     "type": "true_false",
     "question": "Eclipse is an IDE for Java.",
     "answer": "true",
-    "choices": ["true", "false"]
+    "choices": ["true", "false"],
+    "feedback": ["Correct", "Incorrect"]
   },
 {
       "type": "MC",
