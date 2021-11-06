@@ -116,7 +116,7 @@ function handle_quiz(e) {
 }
 
 function check_answer (answer, model) {
-  if (answer == model.answer) {
+  if (JSON.stringify(answer) === JSON.stringify(model.answer)) {
     return true;
   }
   return false;
