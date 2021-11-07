@@ -169,10 +169,14 @@
     "feedback": "The Bootstrap's grid system allows up to 12 columns across the page. If the user doesn't want to use all 12 columns at once, they can split the columns into a 6 by 6, 4 by 8, 4 by 4 by 4, or by spans of 1."
 }
  ]
+      
+"questions2" : [
+ {
+    "type" : "MC",
+    "question": "I eat cheese",
+    "answer": "yes"
 }
-
-
-
+}
 
   
 
