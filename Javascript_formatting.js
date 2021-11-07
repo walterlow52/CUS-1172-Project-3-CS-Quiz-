@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
   const fetch_data = async (quizID) => {
-  const data;
+  const data = "";
   let network_data = "";
     if (quizID == "quiz1") {
 	    data = await fetch ('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db')
