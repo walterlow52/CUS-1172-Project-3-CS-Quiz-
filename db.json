@@ -158,7 +158,7 @@
     "question" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
     "answer" : "5",
     "choices" : "answer_to_question",
-    "feedback": "Remember, when dealing with arrays, the index always starts at 0. Therefore, index 0 is MINI, 1 is Mercedes-Benz, 2 is Audi, 3 is Chevrolet, 4 is Ford, and index 5 contains \"BMW\"."
+    "feedback": "Remember, when dealing with arrays, the index always starts at 0. Therefore, index 0 is MINI, 1 is Mercedes-Benz, 2 is Audi, 3 is Chevrolet, 4 is Ford, and index 5 contains \"BMW\""
 },
 {
     "id": 21,
