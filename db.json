@@ -171,6 +171,16 @@
  ]
 }
 
+      "questions2": [
+{
+    "id": 1,
+    "type": "true_false",
+    "question": "Eclipse is an IDE for Java.",
+    "answer": "true",
+    "choices": ["true", "false"],
+    "feedback": "Eclipse is one of the most well known IDEs not only for Java but for other familiar languages like C, C++, PHP, Ruby, etc."
+  }
+
 
   
 
