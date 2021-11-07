@@ -21,135 +21,152 @@
       "type": "MC",
       "question": "What does HTML stand for?",
       "answer": "Hypertext Markup Language",
-      "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"]
-      "feedback": "HTML stands for Hypertext Markup Language which was created by Tim Berners-Lee."
+      "choices": ["Highlight Machine Language", "Hightext Machine Language", "Hypertext Makeup Language", "Hypertext Markup Language"],
+      "feedback": "HTML stands for Hypertext Markup Language which was created by Tim Berners-Lee. (The other choices are made-up)"
   },
 {
     "id": 4,
     "type": "MC",
     "question": "What is the purpose of CSS?",
     "answer": "To style an HTML webpage",
-    "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"]
-    "feedback": "CSS (Cascading 
+    "choices": ["To brag to someone that you know CSS", "To store values throughout the HTML webpage", "To style an HTML webpage", "All of the above"],
+    "feedback": "CSS (Cascading Style Sheets) is one of the methods that can be used to style an HTML page. (You can brag to someone that you know CSS, but that's not the purpose and Javascript is an effective way to store values for an HTML page)."
   },
 {
     "id": 5,
     "type": "MC",
     "question": "How do you link a Javascript file into an HTML project? (please choose the corresponding line of code)",
     "answer": "<script src = \"JavaScript.js\"> </script>",
-    "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>"] 
+    "choices": ["<script src = \"JavaScript.js\">", "<script src = \"JavaScript.js\"> </script>", "<script src = \"JavaScript.js\" </script>", "<script src = Javascript.js> </script>"],
+    "feedback": "The correct way to link a Javascript file into an HTML project is through the line of code \"script src = \"JavaScript.js\"> </script>\". (One of the choices is missing an end tag, another is missing a \">\", and one is missing quotation marks around Javascript.js)."
   },
 {
     "id": 6,
     "type": "true_false",
     "question": "Bootstrap is an effective way of styling an HTML webpage.",
     "answer": "true",
-    "choices": ["true", "false"]
+    "choices": ["true", "false"],
+    "feedback": "Bootstrap is one of the known methods for styling a HTML webpage. Check \"https://www.w3schools.com/bootstrap4/default.asp\" for different ways to style HTML elements in Bootstrap 4."
   },
 {
     "id": 7,
     "type": "MC",
     "question": "The SQL programming language focuses on: ",
     "answer": "databases",
-    "choices": ["databases", "styling", "development", "none of the above"]
+    "choices": ["databases", "styling", "development", "none of the above"].
+    "feedback": "SQL (Structured Query Language) mainly focuses on the management and communication of databases. (CSS & Bootstrap focuses on styling while HTML focuses on development)."
   },
 {
     "id": 8,
     "type": "true_false",
     "question": "Tableau allows the user to create a 3D representation of a certain dataset.",
     "answer": "true",
-    "choices": ["true", "false"]
+    "choices": ["true", "false"],
+    "feedback": "Tableau allows the user to visualize and understand better. The user can choose a data file (like Excel) and link it to Tableau to create a visual representation of the data. (The user can choose to make it 3D later on while editing)."
   },
 {
     "id": 9,
     "type": "MC",
     "question": "What are the data types that displays whole number values in Java?",
     "answer": "int",
-    "choices": ["int", "double", "string", "boolean"]
+    "choices": ["int", "double", "string", "boolean"],
+    "feedback": "The data type \"int\" stores whole number values in Java. (Double stores decimal values, String stores word values, and boolean stores true/false values)."
   },
  {
     "id": 10,
     "type": "MC",
     "question": "Which of the following is a type of loop in Java?",
     "answer": "all of the above",
-    "choices": ["For", "While", "Do-while", "all of the above"]
+    "choices": ["For", "While", "Do-while", "all of the above"],
+    "feedback": "All choices are known loops in Java. (Loops are used to repeat a block of code numerous times. For loops are usually initialize a single condition once and while loops have a set of commands initialized after each iteration. Do-while loops iterates a portion of the program repeatedly, until the condition is true.)" 
   },
  {
     "id": 11,
     "type": "true_false",
     "question": "Python is a high level, interpreted, interactive, and object-oriented scripting language.",
     "answer": "true",
-    "choices": ["true", "false"]
+    "choices": ["true", "false"],
+    "feedback": "Python is a well known programming language used to buid websites & software while automating tasks and conduct data analysis."
   },
 {
     "id": 12,
     "type" : "text",
     "question" : "Type a print statement for Python below (let the string be \"Hello World\"):",
     "answer" : "print(\"Hello World\")",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "A print statement allows the user to display information on their page. For Python, the syntax for a print statement would be \"print(\"Enter text\")\""
 },
 {
     "id": 13,
     "type" : "text",
     "question" : "Type the HTML5 declaration statement below:",
     "answer" : "<!DOCTYPE html>",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "In HTML, the \"<!DOCTYPE html>\" declaration defines the document as an HTML5 document."
 },
 {
     "id": 14,
     "type" : "text",
     "question" : "What does the \"import java.util.Scanner;\" add to a Java program?",
     "answer" : "a scanner",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "The code \"import java.util.Scanner;\" allows the programmer to add a scanner which can later be used to create a user interface in the program. (However, the best import declaration to use is \"import java.util.*\" as it imports all necessary features for the program)."
 },
 {
     "id": 15,
     "type" : "text",
     "question" : "What does DDoS stand for?",
     "answer" : "Distributed Denial of Service",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "DDoS stands for Distributed Denial of Service, which is when someone floods a network with malicious data to the point where the network can't function properly. (So if you're playing a game with a network server and experience heavy network issues or lag, there might be a slight chance you're being DDoSed)."
 },
 {
     "id": 16,
     "type" : "text",
     "question" : "Type the HTML snippet that links a CSS file to an HTML file (name the CSS file \"CSS_styling.css\"): ",
     "answer" : "<link rel=\"stylesheet\" href=\"CSS_styling.css\">",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "In order to link a CSS file with an HTML file, you must use \"<link rel=\"stylesheet\" href=\"CSS_styling.css\">."
 },
 {
     "id": 17,
     "type" : "text",
     "question" : "How many times does this loop run?    int i = 0;  while (i < 10) {  System.out.println(i);  i++;  }",
     "answer" : "10",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "This while loop prints out the value of \"i\" each time it runs. Before the loop, an int variable \"i\" is set equal to 0. Once the loop starts, a condition is stated that the loop will repeatedly print \"i\" until i reaches 10, then the loop will stop runnning."
 },
 {
     "id": 18,
     "type" : "text",
     "question" : "What SQL command allows the user to create a new database? (type the command in all caps)",
     "answer" : "CREATE DATABASE",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "To start an SQL file, you must first create a database. That can be done by using the \"CREATE DATABASE\" command."
 },
 {
     "id": 19,
     "type" : "text",
     "question" : "Which version of Bootstrap have we been using throughout this class? (type in the number)",
     "answer" : "4",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "Throughout the projects we've been doing in this class that uses Bootstrap, we use Version 4.3.1."
 },
 {
     "id": 20,
     "type" : "text",
     "question" : "Find the index of \"BMW\" in the array: [\"MINI\", \"Mercedes-Benz\", \"Audi\", \"Chevrolet\", \"Ford\", \"BMW\", \"Fiat\", \"Dodge\"]",
     "answer" : "5",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "Remember, when dealing with arrays, the index always starts at 0. Therefore, index 0 is MINI, 1 is Mercedes-Benz, 2 is Audi, 3 is Chevrolet, 4 is Ford, and index 5 contains \"BMW\"."
 },
 {
     "id": 21,
     "type" : "text",
     "question" : "What is the maximum amount of columns that the Bootstrap 4 grid system allows? (type in the number)",
     "answer" : "12",
-    "choices" : "answer_to_question"
+    "choices" : "answer_to_question",
+    "feedback": "The Bootstrap's grid system allows up to 12 columns across the page. If the user doesn't want to use all 12 columns at once, they can split the columns into a 6 by 6, 4 by 8, 4 by 4 by 4, or by spans of 1."
 }
  ]
 }
