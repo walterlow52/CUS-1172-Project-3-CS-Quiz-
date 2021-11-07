@@ -94,7 +94,7 @@
     "question" : "Type a print statement for Python below (let the string be \"Hello World\"):",
     "answer" : "print(\"Hello World\")",
     "choices" : "answer_to_question",
-    "feedback": "A print statement allows the user to display information on their page. For Python, the syntax for a print statement would be \"print(\"Enter text\")\""
+    "feedback": "A print statement allows the user to display information on their page. For Python, the syntax for a print statement would be \"print(\"Enter text\")\"."
 },
 {
     "id": 13,
