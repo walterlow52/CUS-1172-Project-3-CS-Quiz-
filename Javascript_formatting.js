@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const fetch_data = async () => {
   const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
   const module = await data.json()
-  //const html_element = template_view(module, '#view_intro')
    display(module);
   }
   
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     action : "start"
   }
   update(quiz_application);
-  document.querySelector("#view_intro").onclick = (e) => {
+  document.querySelector("#quiz_view").onclick = (e) => {
       handle_quiz(e)
   }
 });
@@ -153,7 +152,7 @@ function question_view(quiz_application) {
 
 function update(quiz_application) {
   const html_element = template_view(quiz_application.model, quiz_application.view);
-  document.querySelector("#view_intro").innerHTML = html_element;
+  document.querySelector("#quiz_view").innerHTML = html_element;
 }
 
 const template_view = (model, view) => {
