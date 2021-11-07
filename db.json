@@ -171,9 +171,11 @@
  ]
   
   "questions2" : [
+ {
     "type" : "MC",
     "question": "I eat cheese",
     "answer": "yes"
+}
   ]
 }
   
