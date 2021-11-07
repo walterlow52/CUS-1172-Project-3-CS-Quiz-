@@ -53,7 +53,7 @@
     "type": "MC",
     "question": "The SQL programming language focuses on: ",
     "answer": "databases",
-    "choices": ["databases", "styling", "development", "none of the above"].
+    "choices": ["databases", "styling", "development", "none of the above"]
     "feedback": "SQL (Structured Query Language) mainly focuses on the management and communication of databases. (CSS & Bootstrap focuses on styling while HTML focuses on development)."
   },
 {
