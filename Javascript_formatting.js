@@ -29,9 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector("#start_quiz").innerHTML = html;
     }
     
-  const fetch_data = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db")
-  const module = await data.json()
+  const quiz_application = {
+      view: "#view_intro",
+      question_i: -1,
+      model: {}
+    }
+    
+  const fetch_data = async (quizID) => {
+  const data;
+  let network_data = "";
+    if (quizID == "quiz1") {
+	    data = await fetch ('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/db')
+	  }
+	  else if (quizID == "quiz2") {
+	    data = await fetch ('https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/db')
+	  }
+    const module = await data.json();
+    quiz_application.model = module;
    display(module);
   }
   
@@ -43,12 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> answer: ${quiz_answer} <br> ${quiz_options} </h4>`;
     document.querySelector("#showdata").innerHTML = HTMLstring;
   }
-
-    const quiz_application = {
-      view: "#view_intro",
-      question_i: -1,
-      model: {}
-    }
     
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.view = "#view_intro";
