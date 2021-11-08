@@ -23,9 +23,6 @@ quiz_application.app_model = data;
 question_view(quiz_application);
 update(quiz_application);
 //display(data);
-	
-quiz_application.app_correct = 0;
-quiz_application.app_incorrect = 0;
 
 /*document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
   if (quiz_id == 1) {
