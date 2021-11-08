@@ -248,7 +248,7 @@ function check_answer (user_answer, model) {
 return false;
 }
 
-let quiz_questions = 20;
+/*let quiz_questions = 20;
 
 function update_question (quiz_application) {
   if (quiz_application.app_question < (quiz_questions - 1)) {
@@ -282,7 +282,7 @@ function question_view (quiz_application) {
   else if (quiz_application.app_model.type == "multi_text_input") {
    quiz_application.app_view = "#multi_text_view";
 }
-}
+}*/
 	
 function grading_view (isCorrect) {
   if (isCorrect == true) {
@@ -324,6 +324,42 @@ function next (e) {
   update_question(quiz_application);
   question_view(quiz_application);
   update(quiz_application);
+}
+
+let quiz_questions = 20;
+
+function update_question (quiz_application) {
+  if (quiz_application.app_question < (quiz_questions - 1)) {
+   quiz_application.app_question = quiz_application.app_question + 1;
+   fetch_data(quiz_application.app_question + 1, quiz_application.app_quiz);
+}
+  else {
+   quiz_application.app_question = -2;
+   quiz_application.app_model = {};
+  }
+}
+	
+function question_view (quiz_application) {
+  if (quiz_application.app_question == -2) {
+   quiz_application.app_view = "#completion";
+   return;
+}
+	
+  if (quiz_application.app_model.type == "true_false") {
+   quiz_application.app_view = "#trueORfalse_view";
+}
+  else if (quiz_application.app_model.type == "text_input") {
+   quiz_application.app_view = "#text_view";
+}
+  else if (quiz_application.app_model.type == "multiple_choice") {
+   quiz_application.app_view = "#MC_view";
+}
+  else if (quiz_application.app_model.type == "checkbox") {
+   quiz_application.app_view = "#checkbox_view";
+}
+  else if (quiz_application.app_model.type == "multi_text_input") {
+   quiz_application.app_view = "#multi_text_view";
+}
 }
 
 function update (quiz_application) {
