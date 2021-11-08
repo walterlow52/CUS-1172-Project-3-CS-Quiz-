@@ -58,16 +58,16 @@ function handle_quiz(e) {
 }
   if (e.target.dataset.action == "questions") {
    time = setInterval(setTime, 1000);
-   minute_i = document.getElementById("minutes");
-   second_i = document.getElementById("seconds");
+   minute_i = document.getElementById("quiz_minutes");
+   second_i = document.getElementById("quiz_seconds");
    quiz_application.app_quiz = "questions";
    quiz_application.app_question = 0;
    fetch_data(quiz_application.app_question + 1, quiz_application.app_quiz);
 }
   else if (e.target.dataset.action == "questions2") {
    time = setInterval(setTime, 1000);
-   minute_i = document.getElementById("minutes");
-   second_i = document.getElementById("seconds");
+   minute_i = document.getElementById("quiz_minutes");
+   second_i = document.getElementById("quiz_seconds");
    quiz_application.app_quiz = "questions2";
    quiz_application.app_question = 0;
    fetch_data(quiz_application.app_question + 1, quiz_application.app_quiz);
