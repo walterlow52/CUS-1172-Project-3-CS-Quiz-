@@ -7,7 +7,7 @@ const quiz_application = {
   app_incorrect: 0
 }
 
-async function fetch_data(quiz_id, quizChoice) {
+async function fetch_data (quiz_id, quizChoice) {
 let network = "";
   if (quizChoice == "questions") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/questions'
@@ -24,7 +24,7 @@ question_view(quiz_application);
 update(quiz_application);
 //display(data);
 	
-document.querySelector("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
+document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
   if (quiz_id == 1) {
    document.getElementById("totalIncorrect").innerHTML = 0;
 }
@@ -234,7 +234,7 @@ function pad(val) {
   }
 }
 
-function check_answer(user_answer, model) {
+function check_answer (user_answer, model) {
   if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
    if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
     return true;
@@ -250,7 +250,7 @@ return false;
 
 let quiz_questions = 20;
 
-function update_question(quiz_application) {
+function update_question (quiz_application) {
   if (quiz_application.app_question < (quiz_questions - 1)) {
    quiz_application.app_question = quiz_application.app_question + 1;
    fetch_data(quiz_application.app_question + 1, quiz_application.app_quiz);
@@ -261,7 +261,7 @@ function update_question(quiz_application) {
   }
 }
 	
-function question_view(quiz_application) {
+function question_view (quiz_application) {
   if (quiz_application.app_question == -2) {
    quiz_application.app_view = "#completion";
    return;
