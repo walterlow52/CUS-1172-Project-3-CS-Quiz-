@@ -153,7 +153,7 @@ feedback_view(isCorrect);
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
   user_response1 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
-  user_response2 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
+  user_response2 = document.querySelector(`#${quiz_application.app_model.choices2}`).value;
 	
 let multi_answers = [];
 multi_answers.push(user_response1);
