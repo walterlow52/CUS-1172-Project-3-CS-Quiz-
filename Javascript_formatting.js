@@ -7,7 +7,7 @@ const quiz_application = {
   app_incorrect: 0
 }
 
-async function fetch_data (quiz_id, quiz_i) {
+async function fetch_data (id, quiz_i) {
 let network = "";
   if (quiz_i == "questions") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/questions'
@@ -15,7 +15,7 @@ let network = "";
   else if (quiz_i == "questions2") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
-let network_data = `${network}/${quiz_id}`;
+let network_data = `${network}/${id}`;
 const retrieve = await fetch(network_data);
 const data = await retrieve.json();
 
@@ -25,7 +25,7 @@ update(quiz_application);
 //display(data);
 
 document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
-  if (quiz_id == 1) {
+  if (id == 1) {
    document.getElementById("totalIncorrect").innerHTML = 0;
 }
   else {
@@ -233,20 +233,6 @@ function pad(val) {
     return valString;
   }
 }
-
-/*function check_answer (user_answer, model) {
-  if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
-   if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
-    return true;
-  }
-}
-  else {
-   if (user_answer == model.answer) {
-    return true;
-   }
-}
-return false;
-}*/
 	
 function grading_view (isCorrect) {
   if (isCorrect == true) {
