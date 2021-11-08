@@ -24,12 +24,14 @@ question_view(quiz_application);
 update(quiz_application);
 //display(data);
 
+function set_quiz() {
 document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect};
   if (quiz_id == 1) {
    document.getElementById("totalIncorrect").innerHTML = 0;
 }
   else {
    document.getElementById("totalIncorrect").innerHTML = +(((quiz_application.app_correct / (quiz_application.app_correct + quiz_application.app_incorrect)) * 100).toFixed(2));
+}
 }
   return (data);
 }
