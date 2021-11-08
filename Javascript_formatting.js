@@ -25,7 +25,7 @@ update(quiz_application);
 //display(data);
 
 function set_quiz() {
-document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect};
+document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
   if (quiz_id == 1) {
    document.getElementById("totalIncorrect").innerHTML = 0;
 }
