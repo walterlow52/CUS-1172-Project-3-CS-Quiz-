@@ -10,12 +10,12 @@ const quiz_application = {
 async function fetch_data (quiz_id, quiz_i) {
 let network = "";
   if (quiz_i == "questions") {
-   network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/'
+   network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/questions'
 }
   else if (quiz_i == "questions2") {
-   network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/'
+   network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
-let network_data = `${network}/${quiz_i}/${quiz_id}`;
+let network_data = `${network}/${quiz_id}`;
 const retrieve = await fetch(network_data);
 const data = await retrieve.json();
 
