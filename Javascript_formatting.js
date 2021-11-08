@@ -326,10 +326,10 @@ function question_view (quiz_application) {
   if (quiz_application.app_model.type == "true_false") {
    quiz_application.app_view = "#trueORfalse_view";
 }
-  else if (quiz_application.app_model.type == "text_input") {
+  else if (quiz_application.app_model.type == "text") {
    quiz_application.app_view = "#text_view";
 }
-  else if (quiz_application.app_model.type == "multiple_choice") {
+  else if (quiz_application.app_model.type == "MC") {
    quiz_application.app_view = "#MC_view";
 }
   else if (quiz_application.app_model.type == "checkbox") {
