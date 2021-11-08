@@ -16,7 +16,7 @@ let network = "";
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
 //let network_data = `${network}/${id}`;
-const retrieve = await fetch(network_data);
+const retrieve = await fetch(network);
 const data = await retrieve.json();
 
 quiz_application.app_model = data;
