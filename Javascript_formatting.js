@@ -276,7 +276,7 @@ function next (e) {
 }
 
 function check_answer (user_answer, model) {
-  if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
+  if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text") {
    if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
     return true;
   }
@@ -320,7 +320,7 @@ function question_view (quiz_application) {
   else if (quiz_application.app_model.type == "checkbox") {
    quiz_application.app_view = "#checkbox_view";
 }
-  else if (quiz_application.app_model.type == "multi_text_input") {
+  else if (quiz_application.app_model.type == "multi_text") {
    quiz_application.app_view = "#multi_text_view";
 }
 }
