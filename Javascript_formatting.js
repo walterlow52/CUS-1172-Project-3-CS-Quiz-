@@ -15,7 +15,7 @@ let network = "";
   else if (quiz_i == "questions2") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
-let network_data = `${network}/${id}`;
+//let network_data = `${network}/${id}`;
 const retrieve = await fetch(network_data);
 const data = await retrieve.json();
 
