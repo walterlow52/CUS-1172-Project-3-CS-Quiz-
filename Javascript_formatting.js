@@ -150,22 +150,6 @@ feedback_view(isCorrect);
   }
 }
 	
-/*if (quiz_application.app_view == "#text_view") {
- if (e.target.dataset.action == "submit") {
-  user_text_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
-  isCorrect = check_answer(user_text_response, quiz_application.app_model);
-  if (isCorrect) {
-   quiz_application.app_correct++;
-}
-  else {
-   quiz_application.app_incorrect++;
-}
-grading_view(isCorrect);
-update(quiz_application);
-feedback_view(isCorrect);
-  }
-}*/
-	
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
   user_response1 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
