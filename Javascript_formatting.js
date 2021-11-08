@@ -16,7 +16,6 @@ let network = "";
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
 let network_data = `${network}/${quiz_id}`;
-//let network_data = `${network}/${quizChoice}/${quiz_id}`;
 const retrieve = await fetch(network);
 const data = await retrieve.json();
 
@@ -137,7 +136,7 @@ feedback_view(isCorrect);
 	
 if (quiz_application.app_view == "#text_view") {
  if (e.target.dataset.action == "submit") {
-  user_response = document.querySelector(`#${quiz_application.app_model.answerFieldId}`).value;
+  user_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
   isCorrect = check_answer(user_response, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
@@ -153,8 +152,8 @@ feedback_view(isCorrect);
 	
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
-  user_response1 = document.querySelector(`#${quiz_application.app_model.answerFieldId1}`).value;
-  user_response2 = document.querySelector(`#${quiz_application.app_model.answerFieldId2}`).value;
+  user_response1 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
+  user_response2 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
 	
 let multi_answers = [];
 multi_answers.push(user_response1);
@@ -235,13 +234,13 @@ function pad(val) {
 }
 
 function check_answer(user_answer, model) {
-  if (quiz_application.app_model.questionType == "checkbox" || quiz_application.app_model.questionType == "multi_text_input") {
-   if (JSON.stringify(user_answer) === JSON.stringify(model.correctAnswer)) {
+  if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
+   if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
     return true;
   }
 }
   else {
-   if (user_answer == model.correctAnswer) {
+   if (user_answer == model.answer) {
     return true;
    }
 }
@@ -267,19 +266,19 @@ function question_view(quiz_application) {
    return;
 }
 	
-  if (quiz_application.app_model.questionType == "true_false") {
+  if (quiz_application.app_model.type == "true_false") {
    quiz_application.app_view = "#trueORfalse_view";
 }
-  else if (quiz_application.app_model.questionType == "text_input") {
+  else if (quiz_application.app_model.type == "text_input") {
    quiz_application.app_view = "#text_view";
 }
-  else if (quiz_application.app_model.questionType == "multiple_choice") {
+  else if (quiz_application.app_model.type == "multiple_choice") {
    quiz_application.app_view = "#MC_view";
 }
-  else if (quiz_application.app_model.questionType == "checkbox") {
+  else if (quiz_application.app_model.type == "checkbox") {
    quiz_application.app_view = "#checkbox_view";
 }
-  else if (quiz_application.app_model.questionType == "multi_text_input") {
+  else if (quiz_application.app_model.type == "multi_text_input") {
    quiz_application.app_view = "#multi_text_view";
 }
 }
