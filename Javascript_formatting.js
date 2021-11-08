@@ -111,7 +111,23 @@ update(quiz_application);
 feedback_view(isCorrect);
   }
 }	
-
+	
+if (quiz_application.app_view == "#text_view") {
+ if (e.target.dataset.action == "submit") {
+  user_text_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
+  isCorrect = check_answer(user_text_response, quiz_application.app_model);
+  if (isCorrect) {
+   quiz_application.app_correct++;
+}
+  else {
+   quiz_application.app_incorrect++;
+}
+grading_view(isCorrect);
+update(quiz_application);
+feedback_view(isCorrect);
+  }
+}
+	
 if (quiz_application.app_view == "#checkbox_view") {
  if (e.target.dataset.action == "submit") {
   var checkboxes = document.getElementsByName("box");
@@ -134,22 +150,7 @@ feedback_view(isCorrect);
   }
 }
 	
-/*if (quiz_application.app_view == "#trueORfalse_view") {
- if (e.target.dataset.action == "answer") {
-  isCorrect = check_answer(e.target.dataset.answer, quiz_application.app_model);
-   if (isCorrect) {
-    quiz_application.app_correct++;
-}
-   else {
-    quiz_application.app_incorrect++;
-}
-grading_view(isCorrect);
-update(quiz_application);
-feedback_view(isCorrect);
-  }
-}*/
-	
-if (quiz_application.app_view == "#text_view") {
+/*if (quiz_application.app_view == "#text_view") {
  if (e.target.dataset.action == "submit") {
   user_text_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
   isCorrect = check_answer(user_text_response, quiz_application.app_model);
@@ -163,7 +164,7 @@ grading_view(isCorrect);
 update(quiz_application);
 feedback_view(isCorrect);
   }
-}
+}*/
 	
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
@@ -323,14 +324,14 @@ function question_view (quiz_application) {
    return;
 }
 	
-  if (quiz_application.app_model.type == "true_false") {
+  if (quiz_application.app_model.type == "MC") {
+   quiz_application.app_view = "#MC_view";
+}
+  else if (quiz_application.app_model.type == "true_false") {
    quiz_application.app_view = "#trueORfalse_view";
 }
   else if (quiz_application.app_model.type == "text") {
    quiz_application.app_view = "#text_view";
-}
-  else if (quiz_application.app_model.type == "MC") {
-   quiz_application.app_view = "#MC_view";
 }
   else if (quiz_application.app_model.type == "checkbox") {
    quiz_application.app_view = "#checkbox_view";
