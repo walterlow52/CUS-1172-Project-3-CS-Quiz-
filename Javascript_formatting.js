@@ -15,8 +15,8 @@ let network = "";
   else if (quiz_i == "questions2") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3_quiz2/questions2'
 }
-//let network_data = `${network}/${id}`;
-const retrieve = await fetch(network);
+let network_data = `${network}/${id}`;
+const retrieve = await fetch(network_data);
 const data = await retrieve.json();
 
 quiz_application.app_model = data;
@@ -57,7 +57,7 @@ function handle_quiz(e) {
      user_name = "@unknown_quiz_user";
 }
   if (e.target.dataset.action == "questions") {
-   time = setInterval(setTime, 1000);
+   time = setInterval(timer, 1000);
    minute_i = document.getElementById("quiz_minutes");
    second_i = document.getElementById("quiz_seconds");
    quiz_application.app_quiz = "questions";
@@ -65,7 +65,7 @@ function handle_quiz(e) {
    fetch_data(quiz_application.app_question + 1, quiz_application.app_quiz);
 }
   else if (e.target.dataset.action == "questions2") {
-   time = setInterval(setTime, 1000);
+   time = setInterval(timer, 1000);
    minute_i = document.getElementById("quiz_minutes");
    second_i = document.getElementById("quiz_seconds");
    quiz_application.app_quiz = "questions2";
@@ -204,7 +204,7 @@ update(quiz_application);
   quiz_timeSeconds = 0;
   second_i.innerHTML = pad(0);
   minute_i.innerHTML = pad(0);
-  time = setInterval(setTime, 1000);
+  time = setInterval(timer, 1000);
 	
 quiz_application.app_question = 0,
 quiz_application.app_correct = 0,
@@ -218,7 +218,7 @@ let minute_i = "";
 let second_i = "";
 let time = 0;
 	
-function setTime() {
+function timer() {
   ++quiz_timeSeconds;
   second_i.innerHTML = pad(quiz_timeSeconds % 60);
   minute_i.innerHTML = pad(parseInt(quiz_timeSeconds / 60));
