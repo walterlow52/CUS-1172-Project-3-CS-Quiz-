@@ -96,6 +96,21 @@ update(quiz_application);
 feedback_view(isCorrect);
   }
 }
+	
+if (quiz_application.app_view == "#trueORfalse_view") {
+ if (e.target.dataset.action == "answer") {
+  isCorrect = check_answer(e.target.dataset.answer, quiz_application.app_model);
+   if (isCorrect) {
+    quiz_application.app_correct++;
+}
+   else {
+    quiz_application.app_incorrect++;
+}
+grading_view(isCorrect);
+update(quiz_application);
+feedback_view(isCorrect);
+  }
+}	
 
 if (quiz_application.app_view == "#checkbox_view") {
  if (e.target.dataset.action == "submit") {
@@ -119,7 +134,7 @@ feedback_view(isCorrect);
   }
 }
 	
-if (quiz_application.app_view == "#trueORfalse_view") {
+/*if (quiz_application.app_view == "#trueORfalse_view") {
  if (e.target.dataset.action == "answer") {
   isCorrect = check_answer(e.target.dataset.answer, quiz_application.app_model);
    if (isCorrect) {
@@ -132,7 +147,7 @@ grading_view(isCorrect);
 update(quiz_application);
 feedback_view(isCorrect);
   }
-}
+}*/
 	
 if (quiz_application.app_view == "#text_view") {
  if (e.target.dataset.action == "submit") {
