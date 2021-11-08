@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   quiz_application.app_view = "#view_intro";
   quiz_application.app_model = {
     action: "questions",
-    action2: "questions2"
+    action_quiz2: "questions2"
 }
   update(quiz_application);
 	
@@ -197,7 +197,7 @@ quiz_application.app_correct = 0,
 quiz_application.app_incorrect = 0
 quiz_application.app_model = {
    action: "questions",
-   action2: "questions2"
+   action_quiz2: "questions2"
 }
 update(quiz_application);
 }
