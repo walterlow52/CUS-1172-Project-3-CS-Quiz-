@@ -7,7 +7,7 @@ const quiz_application = {
   app_incorrect: 0
 }
 
-async function fetch_data(quiz_id, quizChoice) {
+async function fetch_data(quiz_id, quizChoice) => {
 let network = "";
   if (quizChoice == "questions") {
    network = 'https://my-json-server.typicode.com/walterlow52/CUS-1172-Project-3/questions'
