@@ -233,19 +233,6 @@ function pad(val) {
   }
 }
 	
-/*function grading_view (isCorrect) {
-  if (isCorrect == true) {
-   quiz_application.app_view = "#positive";
-}
-  else {
-   quiz_application.app_view = "#negative";
-  }
-}
-	
-function quiz_explanation() {
-  quiz_application.app_view = "#explanation_id";
-}*/
-	
 function feedback_view (isCorrectVal) {
   if (!isCorrectVal) {
    new Promise(function (resolve, reject) {
