@@ -77,14 +77,14 @@ function handle_quiz(e) {
 if (quiz_application.app_view == "#MC_view") {
  if (e.target.dataset.action == "submit") {
   let MCchoices = document.getElementsByName("choice");
-  let user_response;
+  let user_MCresponse;
   for (let i = 0; i < MCchoices.length; i++) {
     if (MCchoices[i].checked) {
-     user_response = MCchoices[i].value;
+     user_MCresponse = MCchoices[i].value;
    }
 }
 
-isCorrect = check_answer(user_response, quiz_application.app_model);
+isCorrect = check_answer(user_MCresponse, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
 }
@@ -105,8 +105,7 @@ if (quiz_application.app_view == "#checkbox_view") {
      if (checkboxes[i].checked) {
       checkboxesChecked.push(checkboxes[i].value);
   }
-}
-	
+}	
 isCorrect = check_answer(checkboxesChecked, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
@@ -137,8 +136,8 @@ feedback_view(isCorrect);
 	
 if (quiz_application.app_view == "#text_view") {
  if (e.target.dataset.action == "submit") {
-  user_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
-  isCorrect = check_answer(user_response, quiz_application.app_model);
+  user_text_response = document.querySelector(`#${quiz_application.app_model.choices}`).value;
+  isCorrect = check_answer(user_text_response, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
 }
