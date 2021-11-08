@@ -234,7 +234,7 @@ function pad(val) {
   }
 }
 
-function check_answer (user_answer, model) {
+/*function check_answer (user_answer, model) {
   if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
    if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
     return true;
@@ -246,7 +246,7 @@ function check_answer (user_answer, model) {
    }
 }
 return false;
-}
+}*/
 	
 function grading_view (isCorrect) {
   if (isCorrect == true) {
@@ -288,6 +288,20 @@ function next (e) {
   update_question(quiz_application);
   question_view(quiz_application);
   update(quiz_application);
+}
+
+function check_answer (user_answer, model) {
+  if (quiz_application.app_model.type == "checkbox" || quiz_application.app_model.type == "multi_text_input") {
+   if (JSON.stringify(user_answer) === JSON.stringify(model.answer)) {
+    return true;
+  }
+}
+  else {
+   if (user_answer == model.answer) {
+    return true;
+   }
+}
+return false;
 }
 
 let quiz_questions = 20;
