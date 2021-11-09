@@ -34,6 +34,14 @@ document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct
   return (data);
 }
 
+function display(data) {
+  let num = 6;
+  let quiz_text = data.questions[num].question;
+  let quiz_choices = data.questions[num].choices;
+  let string = `${quiz_text} <br> ${quiz_choices}`;
+  document.querySelector("#showdata").innerHTML = string;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   quiz_application.app_view = "#view_intro";
   quiz_application.app_model = {
@@ -335,11 +343,4 @@ const template_view = (model, view) => {
   var template = Handlebars.compile(template_source);
   var html_app_element = template({...model, ...quiz_application})
   return html_app_element
-}
-
-function display(data) {
-  let quiz_text = data.questions[6].question;
-  let quiz_choices = data.questions[6].choices;
-  let string = `${quiz_text} <br> ${quiz_choices}`;
-  document.querySelector("#showdata").innerHTML = string;
 }
