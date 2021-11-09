@@ -22,7 +22,6 @@ const data = await retrieve.json();
 quiz_application.app_model = data;
 question_view(quiz_application);
 update(quiz_application);
-display(data);
 
 document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
   if (id == 1) {
@@ -32,14 +31,6 @@ document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct
    document.getElementById("totalIncorrect").innerHTML = +(((quiz_application.app_correct / (quiz_application.app_correct + quiz_application.app_incorrect)) * 100).toFixed(2));
 }
   return (data);
-}
-
-function display(data) {
-  let num = 6;
-  let quiz_text = data.questions[num].question;
-  let quiz_choices = data.questions[num].choices;
-  let string = `<h5> Preview of Question from Quiz </h5> <br> ${quiz_text} <br> ${quiz_choices}`;
-  document.querySelector("#showdata").innerHTML = string;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -83,7 +74,7 @@ function handle_quiz(e) {
 }
 
 if (quiz_application.app_view == "#MC_view") {
- if (e.target.dataset.action == "submit") {
+ if (e.target.dataset.action == "answer") {
   let MC_choices = document.getElementsByName("MC");
   let MC_response;
   for (let i = 0; i < MC_choices.length; i++) {
