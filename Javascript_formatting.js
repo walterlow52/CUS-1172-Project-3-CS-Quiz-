@@ -74,7 +74,7 @@ function handle_quiz(e) {
 }
 
 if (quiz_application.app_view == "#MC_view") {
- if (e.target.dataset.action == "answer") {
+ if (e.target.dataset.action == "submit") {
   let MC_choices = document.getElementsByName("MC");
   let MC_response;
   for (let i = 0; i < MC_choices.length; i++) {
