@@ -22,7 +22,7 @@ const data = await retrieve.json();
 quiz_application.app_model = data;
 question_view(quiz_application);
 update(quiz_application);
-//display(data);
+display(data);
 
 document.getElementById("totalCorrect").innerHTML = quiz_application.app_correct + quiz_application.app_incorrect;
   if (id == 1) {
@@ -337,9 +337,9 @@ const template_view = (model, view) => {
   return html_app_element
 }
 
-/*function display(data) {
+function display(data) {
   let quiz_text = data.questions[6].question;
   let quiz_choices = data.questions[6].choices;
   let string = `${quiz_text} <br> ${quiz_choices}`;
   document.querySelector("#showdata").innerHTML = string;
-}*/
+}
