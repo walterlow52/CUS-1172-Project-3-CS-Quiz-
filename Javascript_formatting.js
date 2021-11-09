@@ -38,7 +38,7 @@ function display(data) {
   let num = 6;
   let quiz_text = data.questions[num].question;
   let quiz_choices = data.questions[num].choices;
-  let string = `${quiz_text} <br> ${quiz_choices}`;
+  let string = `<h5> Preview of Question from Quiz </h5> <br> ${quiz_text} <br> ${quiz_choices}`;
   document.querySelector("#showdata").innerHTML = string;
 }
 
@@ -84,15 +84,15 @@ function handle_quiz(e) {
 
 if (quiz_application.app_view == "#MC_view") {
  if (e.target.dataset.action == "submit") {
-  let MCchoices = document.getElementsByName("choice");
-  let user_MCresponse;
-  for (let i = 0; i < MCchoices.length; i++) {
-    if (MCchoices[i].checked) {
-     user_MCresponse = MCchoices[i].value;
+  let MC_choices = document.getElementsByName("MC");
+  let MC_response;
+  for (let i = 0; i < MC_choices.length; i++) {
+    if (MC_choices[i].checked) {
+     MC_response = MC_choices[i].value;
    }
 }
 
-isCorrect = check_answer(user_MCresponse, quiz_application.app_model);
+isCorrect = check_answer(MC_response, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
 }
