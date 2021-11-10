@@ -223,14 +223,14 @@ function timer() {
   minute_i.innerHTML = pad(parseInt(quiz_timeSeconds / 60));
 }
 	
-/*function pad(val) {
-  var valString = val + "";
-   if (valString.length < 2) {
-    return "0" + valString;
+function timer_function(num) {
+  var html_timer = num + "";
+   if (html_timer.length < 2) {
+    return "0" + html_timer;
 } else {
-    return valString;
+    return html_timer;
   }
-}*/
+}
 	
 function feedback_view (isCorrectVal) {
   if (!isCorrectVal) {
