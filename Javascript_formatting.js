@@ -182,7 +182,7 @@ if (quiz_application.app_view == "#completion") {
    document.getElementById("end_of_quiz").innerHTML = "Final Score: " + finalScore + "% <br> Sorry " + user_name + ", you have failed this quiz.";
 }
 	
-if (e.target.dataset.action == "main_page") {
+if (e.target.dataset.action == "return_page") {
  quiz_timeSeconds = 0;
  second_i.innerHTML = pad(0);
  minute_i.innerHTML = pad(0);
@@ -199,7 +199,7 @@ quiz_application.app_model = {
 }
 update(quiz_application);
 }
- else if (e.target.dataset.action == "retake_quiz") {
+ else if (e.target.dataset.action == "quiz_again") {
   quiz_timeSeconds = 0;
   second_i.innerHTML = pad(0);
   minute_i.innerHTML = pad(0);
