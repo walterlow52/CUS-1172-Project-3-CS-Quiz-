@@ -223,14 +223,14 @@ function timer() {
   minute_i.innerHTML = pad(parseInt(quiz_timeSeconds / 60));
 }
 	
-function pad(val) {
+/*function pad(val) {
   var valString = val + "";
    if (valString.length < 2) {
     return "0" + valString;
 } else {
     return valString;
   }
-}
+}*/
 	
 function feedback_view (isCorrectVal) {
   if (!isCorrectVal) {
