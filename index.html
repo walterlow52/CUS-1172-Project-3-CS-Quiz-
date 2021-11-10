@@ -1,5 +1,6 @@
 <html lang = "en">
-  <head>
+	
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS_styling.css">
@@ -10,9 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="Javascript_formatting.js"></script>
   <title> Front-End SPA Quiz Template </title>
-  </head>
+</head>	
 	
-<body>
+<body>	
 <div class = "jumbotron" style = "background-color: black; color: lime;">
 <h1> Front-End SPA Quiz Template </h1>
 	
@@ -33,8 +34,7 @@
 <h5> <span id = "quiz_minutes"> 00 </span> : <span id = "quiz_seconds"> 00 </span> </h5>
 
 <div id = "showdata">
-</div>
-	
+</div>	
 </body>
 	
 <script id = "view_intro" type = "text/x-handlebars-template">
@@ -59,12 +59,12 @@
      </div>
 	<div class = "row">
 	 <div class = "col">
-	      <span style = "text-align: center"> {{this.question}} </span> <br>
+<span style = "text-align: center"> {{this.question}} </span> <br>
 <input type = "radio" id = "{{this.choices.[0]}}" data-action = "answer" data-answer = "{{this.choices.[0]}}" value = "{{this.choices.[0]}}" name = "MC"> {{this.choices.[0]}} <br>
 <input type = "radio" id = "{{this.choices.[1]}}" data-action = "answer" data-answer = "{{this.choices.[1]}}" value = "{{this.choices.[1]}}" name = "MC"> {{this.choices.[1]}} <br>
 <input type = "radio" id = "{{this.choices.[2]}}" data-action = "answer" data-answer = "{{this.choices.[2]}}" value = "{{this.choices.[2]}}" name = "MC"> {{this.choices.[2]}} <br> 
 <input type = "radio" id = "{{this.choices.[3]}}" data-action = "answer" data-answer = "{{this.choices.[3]}}" value = "{{this.choices.[3]}}" name = "MC"> {{this.choices.[3]}} <br>
-	   <button class = "btn btn-warning" data-action = "submit"> Next </button>
+<button class = "btn btn-warning" data-action = "submit"> Next </button>
 	 </div>
        </div>
      </div>
@@ -79,16 +79,12 @@
    </div>
      <div class = "row">
        <div class = "col">
-	 <div>
 	     <span style = "text-align: center"> {{this.question}} </span> <br>
-	   <div>
-	      <button class = "btn btn-warning" data-action = "answer" data-answer = "{{this.choices.[0]}}"> {{this.choices.[0]}} </button>
-	      <button class = "btn btn-warning" data-action = "answer" data-answer = "{{this.choices.[1]}}"> {{this.choices.[1]}} </button>
+	     <button class = "btn btn-warning" data-action = "answer" data-answer = "{{this.choices.[0]}}"> {{this.choices.[0]}} </button>
+	     <button class = "btn btn-warning" data-action = "answer" data-answer = "{{this.choices.[1]}}"> {{this.choices.[1]}} </button>
 	   </div>
 	 </div>
        </div>
-     </div>
-   </div>
 </script>
 	
 <script id = "text_view" type = "text/x-handlebars-template">
@@ -100,11 +96,9 @@
   </div>
      <div class = "row">
        <div class = "col">
-	 <div>
 	   <span style = "text-align: center"> {{this.question}} </span> <br> <br>
 	   <input type = "text" id = "{{this.choices}}" name = "answer"> <br> <br>
 	   <button class = "btn btn-warning" data-action = "submit"> Next </button>
-	 </div>
        </div>
      </div>
    </div>
@@ -119,14 +113,12 @@
  </div>
     <div class = "row">
       <div class = "col">
-	<div>
 	  <span style = "text-align: center"> {{this.questionOne}} </span>
 	  <input type = "text" id = "{{this.choices}}" name = "answer">
 	  <span style = "text-align: center"> {{this.questionTwo}} </span>
 	  <input type = "text" id = "{{this.choices2}}" name = "answer">
 	  <span style = "text-align: center"> {{this.questionThree}} </span> <br>
 	  <button class = "btn btn-warning" data-action = "submit"> Next </button>
-	</div>
       </div>
     </div>
   </div>
@@ -141,12 +133,12 @@
    </div>
       <div class = "row">
 	<div class = "col">
-	    <span style = "text-align: center"> {{this.question}} </span> <br>
+<span style = "text-align: center"> {{this.question}} </span> <br>
 <input type = "checkbox" id = "{{this.choices.[0]}}" data-action = "answer" data-answer = "{{this.choices.[0]}}" value = "{{this.choices.[0]}}" name = "box"> {{this.choices.[0]}} <br>
 <input type = "checkbox" id = "{{this.choices.[1]}}" data-action = "answer" data-answer = "{{this.choices.[1]}}" value = "{{this.choices.[1]}}" name = "box"> {{this.choices.[1]}} <br>
 <input type = "checkbox" id = "{{this.choices.[2]}}" data-action = "answer" data-answer = "{{this.choices.[2]}}" value = "{{this.choices.[2]}}" name = "box"> {{this.choices.[2]}} <br>
 <input type = "checkbox" id = "{{this.choices.[3]}}" data-action = "answer" data-answer = "{{this.choices.[3]}}" value = "{{this.choices.[3]}}" name = "box"> {{this.choices.[3]}} <br>
-	   <button class = "btn btn-warning" data-action = "submit"> Next </button>
+<button class = "btn btn-warning" data-action = "submit"> Next </button>
       </div>
     </div>
   </div>
