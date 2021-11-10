@@ -184,8 +184,8 @@ if (quiz_application.app_view == "#completion") {
 	
 if (e.target.dataset.action == "return_page") {
  quiz_timeSeconds = 0;
- second_i.innerHTML = pad(0);
- minute_i.innerHTML = pad(0);
+ second_i.innerHTML = timer_function(0);
+ minute_i.innerHTML = timer_function(0);
 	
 quiz_application.app_view = "#view_intro";
 quiz_application.app_question = -1,
@@ -201,8 +201,8 @@ update(quiz_application);
 }
  else if (e.target.dataset.action == "quiz_again") {
   quiz_timeSeconds = 0;
-  second_i.innerHTML = pad(0);
-  minute_i.innerHTML = pad(0);
+  second_i.innerHTML = timer_function(0);
+  minute_i.innerHTML = timer_function(0);
   time = setInterval(timer, 1000);
 	
 quiz_application.app_question = 0,
@@ -219,11 +219,11 @@ let time = 0;
 	
 function timer() {
   ++quiz_timeSeconds;
-  second_i.innerHTML = pad(quiz_timeSeconds % 60);
-  minute_i.innerHTML = pad(parseInt(quiz_timeSeconds / 60));
+  second_i.innerHTML = timer_function(quiz_timeSeconds % 60);
+  minute_i.innerHTML = timer_function(parseInt(quiz_timeSeconds / 60));
 }
 	
-function timer_function(num) {
+function timer_function (num) {
   var html_timer = num + "";
    if (html_timer.length < 2) {
     return "0" + html_timer;
