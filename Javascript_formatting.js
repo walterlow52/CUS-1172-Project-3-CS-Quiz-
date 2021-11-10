@@ -174,12 +174,12 @@ feedback_view(isCorrect);
 if (quiz_application.app_view == "#completion") {
  clearInterval(time);
 	
- let finalScore = +(((quiz_application.app_correct / (quiz_application.app_incorrect + quiz_application.app_correct)) * 100).toFixed(2));
-  if (finalScore >= 80) {
-   document.getElementById("end_of_quiz").innerHTML = "Final Score: " + finalScore + "% <br> Congratulations " + user_name + ", you have passed the quiz!";
+ let grade = +(((quiz_application.app_correct / (quiz_application.app_incorrect + quiz_application.app_correct)) * 100).toFixed(2));
+  if (grade >= 80) {
+   document.getElementById("end_of_quiz").innerHTML = "Final Score: " + grade + "% <br> Congratulations " + user_name + ", you have passed the quiz!";
 }
   else {
-   document.getElementById("end_of_quiz").innerHTML = "Final Score: " + finalScore + "% <br> Sorry " + user_name + ", you have failed this quiz.";
+   document.getElementById("end_of_quiz").innerHTML = "Final Score: " + grade + "% <br> Sorry " + user_name + ", you have failed this quiz.";
 }
 	
 if (e.target.dataset.action == "return_page") {
