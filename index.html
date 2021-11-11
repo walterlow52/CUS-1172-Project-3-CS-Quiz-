@@ -51,13 +51,9 @@
 	
 <script id = "MC_view" type = "text/x-handlebars-template">
     <div class = "container">
-      <div class = "scoreRow">
+      <div class = "row">
 	<div class = "col">
-	   <p> Completed: <span id = "totalCorrect"> </span> <br> Score: <span id = "totalIncorrect"> </span> / 100 </p>
-	</div>
-     </div>
-	<div class = "row">
-	 <div class = "col">
+<p> Completed: <span id = "totalCorrect"> </span> <br> Score: <span id = "totalIncorrect"> </span> / 100 </p>
 <span style = "text-align: center"> {{this.question}} </span> <br>
 <input type = "radio" id = "{{this.choices.[0]}}" data-action = "answer" data-answer = "{{this.choices.[0]}}" value = "{{this.choices.[0]}}" name = "MC"> {{this.choices.[0]}} <br>
 <input type = "radio" id = "{{this.choices.[1]}}" data-action = "answer" data-answer = "{{this.choices.[1]}}" value = "{{this.choices.[1]}}" name = "MC"> {{this.choices.[1]}} <br>
