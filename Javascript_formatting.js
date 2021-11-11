@@ -232,18 +232,18 @@ function timer_function (num) {
   }
 }
 	
-function feedback_view (isCorrectVal) {
-  if (!isCorrectVal) {
+function feedback_view (correct_answer) {
+  if (!correct_answer) {
    new Promise(function (resolve, reject) {
    setTimeout(resolve, 1000);
 }).then(function () {
-  if (!isCorrectVal) {
+  if (!correct_answer) {
    quiz_explanation();
    update(quiz_application);
 }
 });
 }
-  if (isCorrectVal) {
+  if (correct_answer) {
    new Promise(function (resolve, reject) {
    setTimeout(resolve, 1000);
 }).then(function () {
