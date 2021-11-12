@@ -90,6 +90,24 @@
      </div>
    </div>
 </script>
+	
+<script id = "list_view" type = "text/x-handlebars-template">
+    <div class = "container">
+      <div class = "row">
+	<div class = "col">
+<p> Completed: <span id = "totalCorrect"> </span> <br> Score: <span id = "totalIncorrect"> </span> / 100 </p>
+<span style = "text-align: center"> {{this.question}} </span> <br>
+<select id = "quiz_list" name = "list">
+<option value = "{{this.choices.[0]}}" data-action = "answer" data-answer = "{{this.choices.[0]}}"> {{this.choices.[0]}} <br>
+<option value = "{{this.choices.[1]}}" data-action = "answer" data-answer = "{{this.choices.[1]}}"> {{this.choices.[1]}} <br>
+<option value = "{{this.choices.[2]}}" data-action = "answer" data-answer = "{{this.choices.[2]}}"> {{this.choices.[2]}} <br>
+<option value = "{{this.choices.[3]}}" data-action = "answer" data-answer = "{{this.choices.[3]}}"> {{this.choices.[3]}} <br>
+</select>
+<button class = "btn btn-warning" data-action = "submit"> Next </button>
+	 </div>
+       </div>
+    </div>
+</script>	
 
 <script id = "multi_text_view" type = "text/x-handlebars-template">
 <div class = "container">
