@@ -149,7 +149,7 @@ feedback_view(isCorrect);
   }
 }
 
-if (quizState.current_view == "#image_view") {
+if (quiz_application.current_view == "#image_view") {
  if (e.target.dataset.action == "submit") {
   let user_image = document.getElementByName("image");
   let image_response;
