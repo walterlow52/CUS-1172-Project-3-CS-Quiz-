@@ -147,29 +147,6 @@ grading_view(isCorrect);
 update(quiz_application);
 feedback_view(isCorrect);
   }
-}
-
-if (quiz_application.current_view == "#image_view") {
- if (e.target.dataset.action == "submit") {
-  let user_image = document.getElementByName("image");
-  let image_response;
-  for (let i = 0; i < user_image.length; i++) {
-    if (user_image[i].checked) {
-     image_response = user_image[i].value;
-   }
-}
-	  
-isCorrect = check_answer(image_response, quiz_application.app_model);
- if (isCorrect) {
-  quiz_application.app_correct++;
-}
- else {
-  quiz_application.app_incorrect++;
-}
-grading_view(isCorrect);
-update(quiz_application);
-feedback_view(isCorrect);
-  }
 }	
 	
 if (quiz_application.app_view == "#multi_text_view") {
@@ -345,9 +322,6 @@ function question_view (quiz_application) {
   else if (quiz_application.app_model.type == "multi_text") {
    quiz_application.app_view = "#multi_text_view";
 }
-  else if (quiz_application.app_model.type == "image") {
-   quiz_application.app.view = "#image_view";  
-  }
 }
 
 function update (quiz_application) {
