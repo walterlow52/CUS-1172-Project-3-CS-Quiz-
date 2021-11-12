@@ -90,6 +90,19 @@
      </div>
    </div>
 </script>
+
+<script id = "image_view" type = "text/x-handlebars-template">
+  <div class="container">
+    <div class="col">
+<span style = "text-align: center"> {{this.question}} </span>
+<button class = "button-label" id = "choice" data-action = "answer" data-answer = "{{this.options.[0]}}"> <img style = "max-width: 150px;" data-action = "answer" data-answer = "{{this.options.[0]}}" src = "{{this.options.[0]}}"> </button>
+<button class = "button-label" id = "choice" data-action = "answer" data-answer = "{{this.options.[1]}}"> <img style = "max-width: 150px;" data-action = "answer" data-answer = "{{this.options.[0]}}" src = "{{this.options.[1]}}"> </button>
+<button class = "button-label" id = "choice" data-action = "answer" data-answer = "{{this.options.[2]}}"> <img style = "max-width: 150px;" data-action = "answer" data-answer = "{{this.options.[0]}}" src = "{{this.options.[2]}}"> </button>
+<button class = "button-label" id = "choice" data-action = "answer" data-answer = "{{this.options.[3]}}"> <img style = "max-width: 150px;" data-action = "answer" data-answer = "{{this.options.[0]}}" src = "{{this.options.[3]}}"> </button>
+<button class = "btn btn-danger" data-action = "submit"> Next </button>
+     </div>
+   </div>
+</script>	
 	
 <script id = "multi_text_view" type = "text/x-handlebars-template">
 <div class = "container">
