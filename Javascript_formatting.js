@@ -129,14 +129,14 @@ feedback_view(isCorrect);
 	
 if (quiz_application.app_view == "#checkbox_view") {
  if (e.target.dataset.action == "submit") {
-  var checkboxes = document.getElementsByName("box");
-  var checkboxesChecked = [];
-    for (var i = 0; i < checkboxes.length; i++) {
-     if (checkboxes[i].checked) {
-      checkboxesChecked.push(checkboxes[i].value);
+  var checkbox = document.getElementsByName("checkbox");
+  var checkbox_response = [];
+    for (var i = 0; i < checkbox.length; i++) {
+     if (checkbox[i].checked) {
+      checkbox_response.push(checkbox[i].value);
   }
 }	
-isCorrect = check_answer(checkboxesChecked, quiz_application.app_model);
+isCorrect = check_answer(checkbox_response, quiz_application.app_model);
   if (isCorrect) {
    quiz_application.app_correct++;
 }
@@ -148,6 +148,29 @@ update(quiz_application);
 feedback_view(isCorrect);
   }
 }
+
+if (quizState.current_view == "#image_view") {
+ if (e.target.dataset.action == "submit") {
+  let user_image = document.getElementByName("image");
+  let image_response;
+  for (let i = 0; i < user_image.length; i++) {
+    if (user_image[i].checked) {
+     image_response = user_image[i].value;
+   }
+}
+	  
+isCorrect = check_answer(image_response, quiz_application.app_model);
+ if (isCorrect) {
+  quiz_application.app_correct++;
+}
+ else {
+  quiz_application.app_incorrect++;
+}
+grading_view(isCorrect);
+update(quiz_application);
+feedback_view(isCorrect);
+  }
+}	
 	
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
@@ -322,6 +345,9 @@ function question_view (quiz_application) {
   else if (quiz_application.app_model.type == "multi_text") {
    quiz_application.app_view = "#multi_text_view";
 }
+  else if (quiz_application.app_model.type == "image") {
+   quiz_application.app.view = "#image_view";  
+  }
 }
 
 function update (quiz_application) {
