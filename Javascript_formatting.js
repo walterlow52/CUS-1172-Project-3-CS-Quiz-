@@ -152,10 +152,10 @@ feedback_view(isCorrect);
 if (quiz_application.app_view == "#list_view") {
  if (e.target.dataset.action == "submit") {
   let list_choices = document.getElementsByName("list");
-  let list_response;
-  for (let i = 0; i < list_choices.length; i++) {
+  let list_response = [];
+  for (var i = 0; i < list_choices.length; i++) {
     if (list_choices[i].checked) {
-     list_response = list_choices[i].value;
+     list_response.push(list_choices[i].value);
    }
 }
 
