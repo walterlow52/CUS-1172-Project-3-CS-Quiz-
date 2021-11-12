@@ -149,6 +149,29 @@ feedback_view(isCorrect);
   }
 }	
 	
+if (quiz_application.app_view == "#list_view") {
+ if (e.target.dataset.action == "submit") {
+  let list_choices = document.getElementsByName("list");
+  let list_response;
+  for (let i = 0; i < list_choices.length; i++) {
+    if (list_choices[i].checked) {
+     list_response = list_choices[i].value;
+   }
+}
+
+isCorrect = check_answer(list_response, quiz_application.app_model);
+  if (isCorrect) {
+   quiz_application.app_correct++;
+}
+  else {
+   quiz_application.app_incorrect++;
+}
+grading_view(isCorrect);
+update(quiz_application);
+feedback_view(isCorrect);
+  }
+}	
+	
 if (quiz_application.app_view == "#multi_text_view") {
  if (e.target.dataset.action == "submit") {
   user_response1 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
@@ -321,6 +344,9 @@ function question_view (quiz_application) {
 }
   else if (quiz_application.app_model.type == "multi_text") {
    quiz_application.app_view = "#multi_text_view";
+}
+  else if (quiz_application.app_model.type == "list") {
+   quiz_application.app_view = "#list_view";
 }
 }
 
