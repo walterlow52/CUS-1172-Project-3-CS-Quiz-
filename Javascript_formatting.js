@@ -170,28 +170,6 @@ grading_view(isCorrect);
 update(quiz_application);
 feedback_view(isCorrect);
   }
-}	
-	
-if (quiz_application.app_view == "#multi_text_view") {
- if (e.target.dataset.action == "submit") {
-  user_response1 = document.querySelector(`#${quiz_application.app_model.choices}`).value;
-  user_response2 = document.querySelector(`#${quiz_application.app_model.choices2}`).value;
-	
-let multi_answers = [];
-multi_answers.push(user_response1);
-multi_answers.push(user_response2);
-	
-isCorrect = check_answer(multi_answers, quiz_application.app_model);
- if (isCorrect) {
-  quiz_application.app_correct++;
-}
- else {
-  quiz_application.app_incorrect++;
-}
-grading_view(isCorrect);
-update(quiz_application);
-feedback_view(isCorrect);
-  }
 }		
 	
 if (quiz_application.app_view == "#completion") {
@@ -341,9 +319,6 @@ function question_view (quiz_application) {
 }
   else if (quiz_application.app_model.type == "checkbox") {
    quiz_application.app_view = "#checkbox_view";
-}
-  else if (quiz_application.app_model.type == "multi_text") {
-   quiz_application.app_view = "#multi_text_view";
 }
   else if (quiz_application.app_model.type == "list") {
    quiz_application.app_view = "#list_view";
